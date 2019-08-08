@@ -1,0 +1,29 @@
+Name,Part id,Manufacturer,order id,Retailer,Quantity,obs1,obs2,obs3,URL
+,,,,,,,,,
+Red LED,B5B-434-TY,Roithner,,Roitner,1,LED,,5mm,http://www.roithner-laser.com/led_diverse.html
+Green LED,RLS-5B475-S,Roithner,,Roitner,1,LED,,5mm,http://www.roithner-laser.com/led_diverse.html
+Blue LED,VL415-5-15,Roithner,,Roitner,1,LED,,5mm,http://www.roithner-laser.com/led_diverse.html
+UV LED,XSL-365-5E,Roithner,,Roitner,1,LED,,5mm,http://www.roithner-laser.com/led_diverse.html
+,,,,,,,,,
+Red LED Filter,FF01-586/20 BrightLine HC,Semrock,F39-587,AHF,1,Band Pass Filter,,22.9mm,https://www.ahf.de/en/products/spectral-analysis-photonic/optical-filters/individual-filters/bandpass-filters/500-599-nm/2098/586/20-brightline-hc?c=499
+Green LED Filter,ET 480/40,Chroma,F49-480,AHF,1,Band Pass Filter,,22.9mm,https://www.ahf.de/en/products/spectral-analysis-photonic/optical-filters/individual-filters/bandpass-filters/400-499-nm/2598/480/40x-et-bandpass
+Blue LED Filter,ET 420/40,Chroma,F47-420,AHF,1,Band Pass Filter,,22.9mm,https://www.ahf.de/en/products/spectral-analysis-photonic/optical-filters/individual-filters/bandpass-filters/400-499-nm/2370/420/40-et-bandpass
+UV LED Filter,FF01-370/36 BrightLine HC,Semrock,F39-370,AHF,1,Band Pass Filter,,22.9mm,https://www.ahf.de/en/products/spectral-analysis-photonic/optical-filters/individual-filters/bandpass-filters/200-399-nm/1985/370/36-brightline-hc
+,,,,,,,,,
+U/RGB Beamsplitter,T 400 LP,Chroma,F79-100,AHF,1,Dichroic Mirror,,25.5X36X1mm,https://www.ahf.de/en/products/spectral-analysis-photonic/optical-filters/dichroic-beamsplitters/beamsplitters-for-epi-fluorescence/standard-beamsplitters/longpass-beamsplitters/3180/beamsplitter-t-400-lp
+B/RG Beamsplitter,T 450l LPXR,Chroma,F48-450,AHF,1,Dichroic Mirror,,25.5X36X1mm,https://www.ahf.de/en/products/spectral-analysis-photonic/optical-filters/dichroic-beamsplitters/beamsplitters-for-epi-fluorescence/standard-beamsplitters/longpass-beamsplitters/2490/beamsplitter-t-450-lpxr?number=F48-450
+G/R Beamsplitter,H 560 LPXR,AHF,F48-559,AHF,1,Dichroic Mirror,,25.5X36X1mm,https://www.ahf.de/en/products/spectral-analysis-photonic/optical-filters/dichroic-beamsplitters/laser-beamsplitters/longpass-laser-beamsplitters/single/2517/laser-beamsplitter-h-560-lpxr-superflat?number=F48-559
+,,,,,,,,,
+50mm Lens,ACA254-050-A,ThorLabs,ACA254-050-A,ThorLabs,1,350-750 nm,,25.4 * 13.3mm,https://www.thorlabs.com/thorproduct.cfm?partnumber=ACA254-050-A
+,,,,,,,,,
+Cage System Right-Angle Adapter ,LCP30,ThorLabs,LCP30,ThorLabs,3,Cage Assembly,,60mm to 30mm,https://www.thorlabs.com/thorproduct.cfm?partnumber=LCP30
+Cage Plate Adapter,LCP02/M,ThorLabs,LCP02,ThorLabs,2,Cage Assembly,,30mm to 60mm,https://www.thorlabs.com/thorproduct.cfm?partnumber=LCP02/M
+Cage Plate,CP02T/M,ThorLabs,CP02T/M,ThorLabs,4,Cage Assembly,,"30mm x 0.5"" threaded",https://www.thorlabs.com/thorproduct.cfm?partnumber=CP02T/M
+Assembly Rod,ER8,ThorLabs,ER8-P4,ThorLabs,4,Cage Assembly,,"6mmx8""",https://www.thorlabs.com/thorproduct.cfm?partnumber=ER8-P4
+Assembly Rod,ER6,ThorLabs,ER6-P4,ThorLabs,4,Cage Assembly,,"6mmx6""", https://www.thorlabs.com/thorproduct.cfm?partnumber=ER6-P4
+Assembly Rod,ER4,ThorLabs,ER4-P4,ThorLabs,4,Cage Assembly,,"6mmx4""",https://www.thorlabs.com/thorproduct.cfm?partnumber=ER4-P4
+Assembly Rod,ER2,ThorLabs,ER2-P4,ThorLabs,4,Cage Assembly,,"6mmx2""",https://www.thorlabs.com/thorproduct.cfm?partnumber=ER2-P4
+Assembly Rod,ER1,ThorLabs,ER1-P4,ThorLabs,4,Cage Assembly,,"6mmx1""",https://www.thorlabs.com/thorproduct.cfm?partnumber=ER1-P4
+Mounting Post,P10,ThorLabs,P10,ThorLabs,1,Cage Assembly,,"1/4"" x 10""",https://www.thorlabs.com/thorproduct.cfm?partnumber=P10
+Base Adapter,PB4,ThorLabs,PB4,ThorLabs,1,Cage Assembly,,"1/4"" Thread",https://www.thorlabs.com/thorproduct.cfm?partnumber=PB4
+Cage Clamp,CH1560/M,ThorLabs,CH1560/M,ThorLabs,1,Cage Assembly,,"1.5"" Post",https://www.thorlabs.com/thorproduct.cfm?partnumber=CH1560/M

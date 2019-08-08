@@ -1,0 +1,608 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_POT_TRIM RV1
+U 1 1 5C756AE9
+P 11100 1200
+F 0 "RV1" V 10893 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 10984 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 11100 1200 50  0001 C CNN
+F 3 "~" H 11100 1200 50  0001 C CNN
+	1    11100 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x24_Female J1
+U 1 1 5C757AF7
+P 4100 4900
+F 0 "J1" V 4172 4830 50  0000 C CNN
+F 1 "Conn_01x24_Female" V 4263 4830 50  0000 C CNN
+F 2 "Connector_JST:JST_PUD_B24B-PUDSS_2x12_P2.00mm_Vertical" H 4100 4900 50  0001 C CNN
+F 3 "~" H 4100 4900 50  0001 C CNN
+	1    4100 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x24_Female J2
+U 1 1 5C757BB1
+P 8100 4900
+F 0 "J2" V 8172 4830 50  0000 C CNN
+F 1 "Conn_01x24_Female" V 8263 4830 50  0000 C CNN
+F 2 "Connector_JST:JST_PUD_B24B-PUDSS_2x12_P2.00mm_Vertical" H 8100 4900 50  0001 C CNN
+F 3 "~" H 8100 4900 50  0001 C CNN
+	1    8100 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV2
+U 1 1 5C757FB6
+P 10650 1200
+F 0 "RV2" V 10443 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 10534 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 10650 1200 50  0001 C CNN
+F 3 "~" H 10650 1200 50  0001 C CNN
+	1    10650 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV3
+U 1 1 5C757FD1
+P 10200 1200
+F 0 "RV3" V 9993 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 10084 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 10200 1200 50  0001 C CNN
+F 3 "~" H 10200 1200 50  0001 C CNN
+	1    10200 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV4
+U 1 1 5C757FF1
+P 9750 1200
+F 0 "RV4" V 9543 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 9634 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 9750 1200 50  0001 C CNN
+F 3 "~" H 9750 1200 50  0001 C CNN
+	1    9750 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV5
+U 1 1 5C758010
+P 9300 1200
+F 0 "RV5" V 9093 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 9184 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 9300 1200 50  0001 C CNN
+F 3 "~" H 9300 1200 50  0001 C CNN
+	1    9300 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV6
+U 1 1 5C758032
+P 8850 1200
+F 0 "RV6" V 8643 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 8734 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 8850 1200 50  0001 C CNN
+F 3 "~" H 8850 1200 50  0001 C CNN
+	1    8850 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV7
+U 1 1 5C758127
+P 8400 1200
+F 0 "RV7" V 8193 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 8284 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 8400 1200 50  0001 C CNN
+F 3 "~" H 8400 1200 50  0001 C CNN
+	1    8400 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV8
+U 1 1 5C75812E
+P 7950 1200
+F 0 "RV8" V 7743 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 7834 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 7950 1200 50  0001 C CNN
+F 3 "~" H 7950 1200 50  0001 C CNN
+	1    7950 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV9
+U 1 1 5C758135
+P 7500 1200
+F 0 "RV9" V 7293 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 7384 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 7500 1200 50  0001 C CNN
+F 3 "~" H 7500 1200 50  0001 C CNN
+	1    7500 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV10
+U 1 1 5C75813C
+P 7050 1200
+F 0 "RV10" V 6843 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 6934 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 7050 1200 50  0001 C CNN
+F 3 "~" H 7050 1200 50  0001 C CNN
+	1    7050 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV11
+U 1 1 5C758143
+P 6600 1200
+F 0 "RV11" V 6393 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 6484 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 6600 1200 50  0001 C CNN
+F 3 "~" H 6600 1200 50  0001 C CNN
+	1    6600 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV12
+U 1 1 5C75814A
+P 6150 1200
+F 0 "RV12" V 5943 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 6034 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 6150 1200 50  0001 C CNN
+F 3 "~" H 6150 1200 50  0001 C CNN
+	1    6150 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV13
+U 1 1 5C7582F3
+P 5700 1200
+F 0 "RV13" V 5493 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 5584 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 5700 1200 50  0001 C CNN
+F 3 "~" H 5700 1200 50  0001 C CNN
+	1    5700 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV14
+U 1 1 5C7582FA
+P 5250 1200
+F 0 "RV14" V 5043 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 5134 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 5250 1200 50  0001 C CNN
+F 3 "~" H 5250 1200 50  0001 C CNN
+	1    5250 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV15
+U 1 1 5C758301
+P 4800 1200
+F 0 "RV15" V 4593 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 4684 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 4800 1200 50  0001 C CNN
+F 3 "~" H 4800 1200 50  0001 C CNN
+	1    4800 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV16
+U 1 1 5C758308
+P 4350 1200
+F 0 "RV16" V 4143 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 4234 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 4350 1200 50  0001 C CNN
+F 3 "~" H 4350 1200 50  0001 C CNN
+	1    4350 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV17
+U 1 1 5C75830F
+P 3900 1200
+F 0 "RV17" V 3693 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 3784 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 3900 1200 50  0001 C CNN
+F 3 "~" H 3900 1200 50  0001 C CNN
+	1    3900 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV18
+U 1 1 5C758316
+P 3450 1200
+F 0 "RV18" V 3243 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 3334 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 3450 1200 50  0001 C CNN
+F 3 "~" H 3450 1200 50  0001 C CNN
+	1    3450 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV19
+U 1 1 5C75831D
+P 3000 1200
+F 0 "RV19" V 2793 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 2884 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 3000 1200 50  0001 C CNN
+F 3 "~" H 3000 1200 50  0001 C CNN
+	1    3000 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV20
+U 1 1 5C758324
+P 2550 1200
+F 0 "RV20" V 2343 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 2434 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 2550 1200 50  0001 C CNN
+F 3 "~" H 2550 1200 50  0001 C CNN
+	1    2550 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV21
+U 1 1 5C75832B
+P 2100 1200
+F 0 "RV21" V 1893 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 1984 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 2100 1200 50  0001 C CNN
+F 3 "~" H 2100 1200 50  0001 C CNN
+	1    2100 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV22
+U 1 1 5C758332
+P 1650 1200
+F 0 "RV22" V 1443 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 1534 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 1650 1200 50  0001 C CNN
+F 3 "~" H 1650 1200 50  0001 C CNN
+	1    1650 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV23
+U 1 1 5C758339
+P 1200 1200
+F 0 "RV23" V 993 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 1084 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 1200 1200 50  0001 C CNN
+F 3 "~" H 1200 1200 50  0001 C CNN
+	1    1200 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV24
+U 1 1 5C758340
+P 750 1200
+F 0 "RV24" V 543 1200 50  0000 C CNN
+F 1 "R_POT_TRIM" V 634 1200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 750 1200 50  0001 C CNN
+F 3 "~" H 750 1200 50  0001 C CNN
+	1    750  1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	600  1200 600  4700
+Wire Wire Line
+	600  4700 2900 4700
+Wire Wire Line
+	1050 1200 1050 4650
+Wire Wire Line
+	1050 4650 3000 4650
+Wire Wire Line
+	3000 4650 3000 4700
+Wire Wire Line
+	1500 1200 1500 4600
+Wire Wire Line
+	1500 4600 3100 4600
+Wire Wire Line
+	3100 4600 3100 4700
+Wire Wire Line
+	1950 1200 1950 4550
+Wire Wire Line
+	1950 4550 3200 4550
+Wire Wire Line
+	3200 4550 3200 4700
+Wire Wire Line
+	2400 1200 2400 4500
+Wire Wire Line
+	2400 4500 3300 4500
+Wire Wire Line
+	3300 4500 3300 4700
+Wire Wire Line
+	2850 1200 2850 4450
+Wire Wire Line
+	2850 4450 3400 4450
+Wire Wire Line
+	3400 4450 3400 4700
+Wire Wire Line
+	3300 1200 3300 4400
+Wire Wire Line
+	3300 4400 3500 4400
+Wire Wire Line
+	3500 4400 3500 4700
+Wire Wire Line
+	3750 1200 3750 4300
+Wire Wire Line
+	3750 4300 3600 4300
+Wire Wire Line
+	3600 4300 3600 4700
+Wire Wire Line
+	4200 1200 4200 4250
+Wire Wire Line
+	4200 4250 3700 4250
+Wire Wire Line
+	3700 4250 3700 4700
+Wire Wire Line
+	4650 1200 4650 4200
+Wire Wire Line
+	4650 4200 3800 4200
+Wire Wire Line
+	3800 4200 3800 4700
+Wire Wire Line
+	5100 1200 5100 4150
+Wire Wire Line
+	5100 4150 3900 4150
+Wire Wire Line
+	3900 4150 3900 4700
+Wire Wire Line
+	5550 1200 5550 4100
+Wire Wire Line
+	5550 4100 4000 4100
+Wire Wire Line
+	4000 4100 4000 4700
+Wire Wire Line
+	6000 1200 6000 4050
+Wire Wire Line
+	6000 4050 4100 4050
+Wire Wire Line
+	4100 4050 4100 4700
+Wire Wire Line
+	6450 1200 6450 4300
+Wire Wire Line
+	6450 4300 4200 4300
+Wire Wire Line
+	4200 4300 4200 4700
+Wire Wire Line
+	6900 1200 6900 3950
+Wire Wire Line
+	6900 3950 4300 3950
+Wire Wire Line
+	4300 3950 4300 4700
+Wire Wire Line
+	7350 1200 7350 3900
+Wire Wire Line
+	7350 3900 4400 3900
+Wire Wire Line
+	4400 3900 4400 4700
+Wire Wire Line
+	7800 1200 7800 3850
+Wire Wire Line
+	7800 3850 4500 3850
+Wire Wire Line
+	4500 3850 4500 4700
+Wire Wire Line
+	8250 1200 8250 3800
+Wire Wire Line
+	8250 3800 4600 3800
+Wire Wire Line
+	4600 3800 4600 4700
+Wire Wire Line
+	8700 1200 8700 3750
+Wire Wire Line
+	8700 3750 4700 3750
+Wire Wire Line
+	4700 3750 4700 4700
+Wire Wire Line
+	9150 1200 9150 3700
+Wire Wire Line
+	9150 3700 4800 3700
+Wire Wire Line
+	4800 3700 4800 4700
+Wire Wire Line
+	9600 1200 9600 3650
+Wire Wire Line
+	9600 3650 4900 3650
+Wire Wire Line
+	4900 3650 4900 4700
+Wire Wire Line
+	10050 1200 10050 3600
+Wire Wire Line
+	10050 3600 5000 3600
+Wire Wire Line
+	5000 3600 5000 4700
+Wire Wire Line
+	10500 1200 10500 3550
+Wire Wire Line
+	10500 3550 5200 3550
+Wire Wire Line
+	5200 3550 5200 4350
+Wire Wire Line
+	5200 4350 5100 4350
+Wire Wire Line
+	5100 4350 5100 4700
+Wire Wire Line
+	10950 1200 10950 3500
+Wire Wire Line
+	10950 3500 5250 3500
+Wire Wire Line
+	5250 3500 5250 4400
+Wire Wire Line
+	5250 4400 5200 4400
+Wire Wire Line
+	5200 4400 5200 4700
+Wire Wire Line
+	11100 1350 11100 4700
+Wire Wire Line
+	11100 4700 9200 4700
+Wire Wire Line
+	10650 1350 10650 4650
+Wire Wire Line
+	10650 4650 9100 4650
+Wire Wire Line
+	9100 4650 9100 4700
+Wire Wire Line
+	10200 1350 10200 4600
+Wire Wire Line
+	10200 4600 9000 4600
+Wire Wire Line
+	9000 4600 9000 4700
+Wire Wire Line
+	9750 1350 9750 4550
+Wire Wire Line
+	9750 4550 8900 4550
+Wire Wire Line
+	8900 4550 8900 4700
+Wire Wire Line
+	9300 1350 9300 4500
+Wire Wire Line
+	9300 4500 8800 4500
+Wire Wire Line
+	8800 4500 8800 4700
+Wire Wire Line
+	8850 1350 8850 4450
+Wire Wire Line
+	8850 4450 8700 4450
+Wire Wire Line
+	8700 4450 8700 4700
+Wire Wire Line
+	8400 1350 8400 4400
+Wire Wire Line
+	8400 4400 8600 4400
+Wire Wire Line
+	8600 4400 8600 4700
+Wire Wire Line
+	7950 1350 7950 4350
+Wire Wire Line
+	7950 4350 8500 4350
+Wire Wire Line
+	8500 4350 8500 4700
+Wire Wire Line
+	7500 1350 7500 4300
+Wire Wire Line
+	7500 4300 8350 4300
+Wire Wire Line
+	8350 4300 8350 4500
+Wire Wire Line
+	8350 4500 8400 4500
+Wire Wire Line
+	8400 4500 8400 4700
+Wire Wire Line
+	7050 1350 7050 4250
+Wire Wire Line
+	7050 4250 8300 4250
+Wire Wire Line
+	8300 4250 8300 4700
+Wire Wire Line
+	6600 1350 6600 4200
+Wire Wire Line
+	6600 4200 8200 4200
+Wire Wire Line
+	8200 4200 8200 4700
+Wire Wire Line
+	6150 1350 6150 4150
+Wire Wire Line
+	6150 4150 8100 4150
+Wire Wire Line
+	8100 4150 8100 4700
+Wire Wire Line
+	5700 1350 5700 4100
+Wire Wire Line
+	5700 4100 8000 4100
+Wire Wire Line
+	8000 4100 8000 4700
+Wire Wire Line
+	5250 1350 5250 3450
+Wire Wire Line
+	5250 3450 7900 3450
+Wire Wire Line
+	7900 3450 7900 4700
+Wire Wire Line
+	4800 1350 4800 3400
+Wire Wire Line
+	4800 3400 7750 3400
+Wire Wire Line
+	7750 3400 7750 4350
+Wire Wire Line
+	7750 4350 7800 4350
+Wire Wire Line
+	7800 4350 7800 4700
+Wire Wire Line
+	4350 1350 4350 3350
+Wire Wire Line
+	4350 3350 7700 3350
+Wire Wire Line
+	7700 3350 7700 4700
+Wire Wire Line
+	3900 1350 3900 3300
+Wire Wire Line
+	3900 3300 7600 3300
+Wire Wire Line
+	7600 3300 7600 4700
+Wire Wire Line
+	3450 1350 3450 3250
+Wire Wire Line
+	3450 3250 7450 3250
+Wire Wire Line
+	7450 3250 7450 4350
+Wire Wire Line
+	7450 4350 7500 4350
+Wire Wire Line
+	7500 4350 7500 4700
+Wire Wire Line
+	3000 1350 3000 3200
+Wire Wire Line
+	3000 3200 7400 3200
+Wire Wire Line
+	7400 3200 7400 4700
+Wire Wire Line
+	2550 1350 2550 3150
+Wire Wire Line
+	2550 3150 7300 3150
+Wire Wire Line
+	7300 3150 7300 4700
+Wire Wire Line
+	2100 1350 2100 3100
+Wire Wire Line
+	2100 3100 7200 3100
+Wire Wire Line
+	7200 3100 7200 4700
+Wire Wire Line
+	1650 1350 1650 3050
+Wire Wire Line
+	1650 3050 7100 3050
+Wire Wire Line
+	7100 3050 7100 4700
+Wire Wire Line
+	1200 1350 1200 3000
+Wire Wire Line
+	1200 3000 7000 3000
+Wire Wire Line
+	7000 3000 7000 4700
+Wire Wire Line
+	750  1350 750  2950
+Wire Wire Line
+	750  2950 6800 2950
+Wire Wire Line
+	6800 2950 6800 4700
+Wire Wire Line
+	6800 4700 6900 4700
+$EndSCHEMATC
