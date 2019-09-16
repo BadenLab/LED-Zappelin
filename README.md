@@ -28,7 +28,7 @@ Here we describe an effective, low-cost, opensource LED stimulator, designed to 
 |
 ├───Arduino Code                              Stimulator Code
 |   ├───Stimulator Code                       - Adaptable C+ code for running the stimulator
-|   └───LED drive library                     - Library to run the TLC 5947
+|   └───LED driver library                     - Library to run the TLC 5947
 |
 ├───Bill of Materials                         List of necessary components and retailer suggestions
 |

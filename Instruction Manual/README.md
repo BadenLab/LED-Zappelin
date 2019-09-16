@@ -6,11 +6,11 @@
 
 ## Overview
 
-<img align="right" width="600" height="475" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Components.png">
+<img align="right" width="600" height="300" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Stimulator.png">
 
 This document contains detailed assembly instructions, a software guideline to customize stimuli, and includes a parts list.
 
- The Arduino code and 3D printing files (SCAD and STL) can be downloaded [here](https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/tree/master/3D%20Designs/Stimulator), and further modified to fit customise purposes. The aim of this device is to finely control LEDs used in combination with a 2-photon microscope.
+ The Arduino code and 3D printing files (SCAD and STL) can be downloaded [here](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/3D%20Designs), and further modified to fit customise purposes. The aim of this device is to finely control LEDs used in combination with a 2-photon microscope.
 
 The device consists of a custom-designed PCB, an [ESP32 development board](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather) (or an Arduino Nano if the stimulator does not need to be combined with a 2 photon microscope), a [LED driver](https://learn.adafruit.com/tlc5947-tlc59711-pwm-led-driver-breakout/overview) and various off-the-shelf components.
 
@@ -25,13 +25,13 @@ The device consists of a custom-designed PCB, an [ESP32 development board](https
 
 ## Assembling the stimulator
 
-<img align="right" width="350" height="225" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Scematics.png">
+<img align="right" width="350" height="225" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Circuit%20Drawing.png">
 
 <p align="center"><h4 align="left">1 – Obtaining the custom-designed PCB</h4></p>
 
-From the GitHub repository, one can find the [gerber.zip folder](https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/tree/master/PCB/Stimulator) needed to order the PCB to any manufacturer company (i.e. https://jlcpcb.com).
+From the GitHub repository, one can find the [gerber.zip folder](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/PCB/Stimulator) needed to order the PCB to any manufacturer company (i.e. https://jlcpcb.com).
 
-Ordering a minimum of 5 units should not cost more than £10. Gerber files were designed with [KiCad 5.0](http://kicad-pcb.org/).
+Ordering a minimum of five units should not cost more than £10. Gerber files were designed with [KiCad 5.0](http://kicad-pcb.org/).
 
 
 Schematics and PCB footprint can be downloaded and modified from the same repository if need be.
@@ -40,13 +40,13 @@ Schematics and PCB footprint can be downloaded and modified from the same reposi
 ****
 
 <p align="center"><h4 align="left">2 – Soldering the custom-designed PCB</h4></p>
-<img align="left" width="375" height="225" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/PCB01.png">
+<img align="left" width="375" height="225" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Board.png">
 
-The board is self-explanatory. On the left, two options are available, one for the Arduino (close rows) the other for the ESP (spread rows). There is no need to solder more JST pins that the number of LED required for the desired stimulator. The two resistors at the bottom are a voltage divider for the ESP32 only (There’s no need to solder any resistor here if the Arduino option is chosen).
+The board is self-explanatory. On the left, two options are available, one for the Arduino (close rows) the other for the ESP (spread rows). There is no need to solder more JST pins that the number of LED required for the desired stimulator.
 
-ESP32 unlike Arduino Nano, works on a 3.3V logic; no higher tension should be sent to this board. Since most TTL deliver 5V pulses, we selected a 220/470Ω divider to bring a 5V blanking signal into a 3.3V input. Depending on the blanking signal generator used, this divider can be modified to fit one’s personal design or bypassed by only bridging the 220Ω resistor.
+The jumper on the top (Signal Inverter) allows the inversion of the TTL "Blanking" signals. For ScanImage users, the jumper should be placed at the upper position.
 
-(Supplementary Figure S3 TESSA PICTURE)
+The jumper at the bottom of the board (Voltage Divider) allows to tune down the voltage from 5 to 3.3V if the ESP is used instead of an Arduino. ESP32 unlike Arduino Nano, works on a 3.3V logic; no higher tension should be sent to this board. Since most TTL deliver 5V pulses, we selected a 220/470Ω divider to bring a 5V blanking signal into a 3.3V input. Depending on the blanking signal generator used, this divider can be modified to fit one’s personal design or bypassed by only bridging the 220Ω resistor.
 
 <img align="right" width="500" height="200" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/reference%20resistor%20vs%20output%20current.png">
 
@@ -57,9 +57,9 @@ The Adafruit TLC5947 LED driver is a constant current driver configured by defau
 ****
 
 <p align="center"><h4 align="left">3 – Mounting the potentiometer</h4></p>
-<img align="right" width="300" height="192" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Potentiometer%20PCB.png">
+<img align="right" width="200" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Potentiometer%20PCB.png">
 
-In order to finely adjust each LED power, we added multiple-turn trimmer potentiometers to our design. A simple solution is to manufacture the appropriate PCB board (We provide multiple options on the [GitHub repository](https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/tree/master/PCB/Potentiometer%20Mounts)).
+In order to finely adjust each LED power, we added multiple-turn trimmer potentiometers to our design. A simple solution is to manufacture the appropriate PCB board (We provide multiple options on the [GitHub repository](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/PCB/Potentiometer%20Mounts)).
 
 Otherwise, one can make its own little PCB by using a solderable board.
 Each potentiometer connects its ClockWise (pin 3) to the LED (+) stimulator JST pin; and its Base (pin 2) to the LED (+) leg. The LED (-) stimulator JST pin connects the LED (-) leg directly.
@@ -69,9 +69,9 @@ Each potentiometer connects its ClockWise (pin 3) to the LED (+) stimulator JST 
 <p align="center"><h4 align="left">4 – Printing the Stimulator box</h4></p>
 <img align="left" width="300" height="250" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Box.png">
 
-[STL files](https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/tree/master/3D%20Designs/Stimulator/STL%20Files) can be found on the GitHub repository and print directly if the user wishes to go for the default design (4 stimulation LEDs + 4 proxy LEDs) and [BoM](https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Bills%20of%20Materials/BOM%20-%20Stimulator.ods).
+[STL files](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/3D%20Designs/Stimulator/STL%20Files) can be found on the GitHub repository and print directly if the user wishes to go for the default design (4 stimulation LEDs + 4 proxy LEDs) and [BoM](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Bills%20of%20Materials/BOM%20-%20Stimulator.ods).
 
-However, [SCAD files](https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/3D%20Designs/Optical%20Components/Optical%20Components.scad) are also available and easily adjustable for personalised design.
+However, [SCAD files](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/3D%20Designs/Stimulator/MultiChromatic%20Stimulator%20v2.1.scad) are also available and easily adjustable for personalised design.
 
 We used [OpenSCAD](www.openscad.com) to design the stimulator box. The tolerance of the printer can be adjusted in the “USER Parameters” section of the script (tol =0.1; by default, this value is used for Prusa MK3 and Ultimaker 2). Each component can be displayed/design individually in the “Switches” section. Variables such as LED number (4 by default) and the potentiometer board dimensions can be adjusted in the “Component Parameters” section.
 
@@ -84,11 +84,7 @@ All part should fit tightly together and are maintained together by 4 M3*50mm so
 <p align="center"><h4 align="left">5 – Adjusting the proxy LED</h4></p>
 The proxy LED are markers for the experimenter to have a ready visualisation of the stimulus being displayed under the objective. If this option is selected, 3mm LEDs are to be mounted at the back of the LED holder using 3mm LED mounts.
 
-(Tessa picture)
-
 Finally, any translucid material could be placed in the LED holder slot in order to diffuse the proxy LED light (In our example, we used a piece of thin Teflon)
-
-(TESSA PICTURE OF THE LED HOLDER Supplementary Figure S7)
 
 ***
 
@@ -101,9 +97,7 @@ The trigger channel is an output signal generated by the stimulator that by defa
 
 Finally, the board is connected to a computer via micro USB cable (for ESP32, mini USB for Arduino Nano), and ready to be used.
 
-(Final picture)
-
-(Experiment Picture)
+<img align="center" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Schematics.png" width="1000"/>
 
 ***
 
@@ -118,7 +112,7 @@ Follow the installation instructions from the [Espressif repository](https://git
 
 3-	Install the TLC5947 library:	Start Arduino and from the “Sketch” tab, select “Include Library” and open “ Manage Libraries”.	From the search bar enter “TLC5947”. Select and Install the library
 
-4-	Close Arduino and open the Multi-Chromatic-Stimulator arduino file from the [Arduino Code folder](https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/tree/master/Arduino%20code/2-Photon_Mutli_Chromatic_Stimulator).
+4-	Close Arduino and open the Multi-Chromatic-Stimulator arduino file from the [Arduino Code folder](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/Arduino%20code/2-Photon_Mutli_Chromatic_Stimulator).
 
 
 5-	From the “Tools” tab: Select from “Boards” the “Adafruit ESP32 Feather”.	From “Upload Speed”, select 921600.	From “Flash Frequency”, select 80Hz. From “Port”, select the computer port to which the ESP is connected (if doubt, unplug, replug and observe the choices differences). If the ESP is not recognised, check the driver installation (2), then check the micro USB cable.
@@ -220,19 +214,20 @@ For the calibration, we suggest setting the max_LED# value at 4095 (Full power),
 
 For the visual stimulator, we used the [ThorLabs Compact CCD Spectrometer](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_ID=3482) CCS200/M in combination with the [ThorLabs OSA software](https://www.thorlabs.com/software_pages/ViewSoftwarePage.cfm?Code=OSA).
 We placed the spectrometer fiber patch cable at the sample position and played the calibration code on the stimulator. This calibration sequence plays each LED individually from 0 to 100% for 1 second and loops 5 times. This stimulus sequence is quite tedious so we encourage users to adapt it to their needs.
-Recordings were made using the inbuilt trigger mode of the spectrometer (connected to the stimulator trigger output). We used an integration time of 1 second and applied the inbuilt spectrum correction in the OSA software. Data was extracted as .csv files and analysed using our [iPython analysis script](https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Spectrum%20Calibration/Measurement%20Analysis.ipynb).
+Recordings were made using the inbuilt trigger mode of the spectrometer (connected to the stimulator trigger output). We used an integration time of 1 second and applied the inbuilt spectrum correction in the OSA software. Data was extracted as .csv files and analysed using our [iPython analysis script](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Stimulator_Calibration.ipynb).
 
 
-<img align="right" width="500" height="350" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/iPython%20Notebook/Slide2.png">
+<img align="right" width="500" height="350" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Notebook_01.png">
 
 For analysis purposes, we designed an [iPython notebook](https://jupyter.readthedocs.io/en/latest/install.html).
 In this script, one has to first modify the global parameters:
-  - Directory location: *os.chdir*
-  - Opsin maximum absorbance: *PeakWavelength* This array contains the peak asorbance for each opsin considered. For the zebrafish, we use the value defined by [Allison et al, 2004 - Visual pigment composition in Zebrafish](https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/References/Allison%202004%20-%20Visual%20pigment%20composition%20in%20zebrafish.pdf)
-  - Recording parameters: Number of loops, number of recording per loop, etc.
+  - Opsin maximum absorbance: *PeakWavelength* This array contains the peak asorbance for each opsin considered. For the zebrafish, we use the value defined by [Allison et al, 2004 - Visual pigment composition in Zebrafish](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/References/Allison%202004%20-%20Visual%20pigment%20composition%20in%20zebrafish.pdf)
+  - Number of LEDs to be considered
   - Figure parameters: Figure sizes, spectra range to considered, etc.
 
-<img align="left" width="650" height="325" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/iPython%20Notebook/Slide3.png">
+<img align="left" width="650" height="325" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Filtered%20Spectrometer%20Recordings.png">
+
+.
 
 .
 
@@ -249,26 +244,28 @@ At this stage, one might retake measurements with the spectrometer with this new
 
 To establish the LEDs performance we then plotted their normalised intensities (LED relative brightness) against the PWM (*array_LED#*) used in the Arduino code to drive them. A Linear fit along with the Sum of Square Error (SSE), demonstrates that the TLC5947 LED driver controls the LED in an optimal linear manner.
 
-<img align="center" width="800" height="200" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/iPython%20Notebook/Slide4.png">
+<img align="center" width="800" height="200" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Normalised%20Intensity%20VS%20Forward%20Current.png">
 
 ***
 
-We then used the absorbance spectrum fitting template for visual pigment defined by [Govardoskii et al, 2000 - In Search of Visual Pigment Template](https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/References/Govardovskii%202000%20-%20In%20search%20of%20the%20visual%20pigment%20template.pdf). Using the Opsin maximal absorbance defined earlier, this nomogram template describes the predicted shape of the absorbance spectra of all visual pigment. Here we obtained the following specra for the zebrafish cone photoreceptors that we plotted along the human visible spectrum as comparison.
+We then used the absorbance spectrum fitting template for visual pigment defined by [Govardoskii et al, 2000 - In Search of Visual Pigment Template](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/References/Govardovskii%202000%20-%20In%20search%20of%20the%20visual%20pigment%20template.pdf). Using the Opsin maximal absorbance defined earlier, this nomogram template describes the predicted shape of the absorbance spectra of all visual pigment. Here we obtained the following specra for the zebrafish cone photoreceptors that we plotted along the human visible spectrum as comparison.
 
-<img align="center" width="900" height="600" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/iPython%20Notebook/Slide5.png">
+<img align="center" width="900" height="600" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Cone%20Absoprtion%20Spectra.png">
 
 ***
 
 Using the same display we plotted the LEDs spectra that we obtained from the spectrometer recordings.
 
-<img align="center" width="900" height="600" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/iPython%20Notebook/Slide6.png">
+Then, we plotted the LED spectra along the cone opsin absorbance, and each LED’s spectral cross-section with respective target conein solid colours. Grey boxes indicate the positions of the two PMT detector bands. The Red-LED’s long-wavelength emission spectrum was chosen to limit spectral overlap with the red-fluorescence detection channel. Any loss in excitation efficiency of the red opsin was compensated for by increasing this LED’s power accordingly.
+
+<img align="center" width="900" height="600" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Opsin-LED%20Spectra.png">
+
 
 ***
 
-Finally we plotted the LED spectra along the cone opsin absorbance, and each LED’s spectral cross-section with respective target conein solid colours. Grey boxes indicate the positions of the two PMT detector bands. The Red-LED’s long-wavelength emission spectrum was chosen to limit spectral overlap with the red-fluorescence detection channel. Any loss in excitation efficiency of the red opsin was compensated for by increasing this LED’s power accordingly.
-
-<img align="center" width="900" height="600" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/iPython%20Notebook/Slide7.png">
-
+With the previous spectra, we estimate the relative co-excitation of photoreceptors by the LEDs:
+<img align="center" width="900" height="600" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/LED-Opsin%20Co-Excitation.png">
+<img align="center" width="900" height="600" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Opsin-LED%20Co-Excitation.png">
 
 ***
 
