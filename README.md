@@ -11,7 +11,7 @@ The study of colour vision with fluorescence microscopy requires precise control
 Here we describe an effective, low-cost, opensource LED stimulator, designed to be used in combination with a 2-photon microscope. The design is built around an open-source development board and off-the-shelf components. It has been conceived to be assembled and used without the need for advanced electronics skills.
 
 
-[Instruction Manual](https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/tree/master/Manuscript%20and%20Instruction%20Manual)
+## [Instruction Manual](https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/tree/master/Manuscript%20and%20Instruction%20Manual)
 
 ***
 
