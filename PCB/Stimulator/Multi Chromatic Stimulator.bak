@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Multi Chromatic Stimulator-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -28,15 +29,13 @@ $Comp
 L Driver_LED:TLC5947DAP U1
 U 1 1 5BB63603
 P 5300 3900
-F 0 "U1" V 5254 5441 50  0000 L CNN
-F 1 "TLC5947DAP" V 5345 5441 50  0000 L CNN
+F 0 "U1" V 5250 4400 50  0000 L CNN
+F 1 "TLC5947DAP" V 5350 4250 50  0000 L CNN
 F 2 "Package_SO:HTSSOP-32-1EP_6.1x11mm_P0.65mm_EP5.2x11mm_Mask4.11x4.36mm_ThermalVias" H 4750 5500 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tlc5947.pdf" H 5300 3900 50  0001 C CNN
 	1    5300 3900
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3650 3800 3900 3800
 $Comp
 L Connector:Barrel_Jack J25
 U 1 1 5BB69714
@@ -51,12 +50,12 @@ $EndComp
 $Comp
 L power:GNDREF #PWR0101
 U 1 1 5BB6A0FC
-P 2800 3550
-F 0 "#PWR0101" H 2800 3300 50  0001 C CNN
-F 1 "GNDREF" H 2950 3350 50  0000 R CNN
-F 2 "" H 2800 3550 50  0001 C CNN
-F 3 "" H 2800 3550 50  0001 C CNN
-	1    2800 3550
+P 2250 3850
+F 0 "#PWR0101" H 2250 3600 50  0001 C CNN
+F 1 "GNDREF" H 2400 3650 50  0000 R CNN
+F 2 "" H 2250 3850 50  0001 C CNN
+F 3 "" H 2250 3850 50  0001 C CNN
+	1    2250 3850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -591,11 +590,6 @@ Wire Wire Line
 	6800 4100 8550 4100
 Wire Wire Line
 	3650 1400 4100 1400
-Wire Wire Line
-	2800 3550 3650 3550
-Connection ~ 3650 3550
-Wire Wire Line
-	3650 3550 3650 3800
 $Comp
 L Switch:SW_SPST_LED SW1
 U 1 1 5C6C82DB
@@ -610,10 +604,10 @@ $EndComp
 Wire Wire Line
 	8950 1400 8950 1500
 $Comp
-L huzzahesp32:HuzzahESP32 U1
+L huzzahesp32:HuzzahESP32 A2
 U 1 1 5C6D9879
 P 6950 2450
-F 0 "U1" V 7050 2050 50  0000 L CNN
+F 0 "A2" V 7050 2050 50  0000 L CNN
 F 1 "HuzzahESP32" V 7150 1900 50  0000 L CNN
 F 2 "" H 7050 2450 50  0001 C CNN
 F 3 "" H 7050 2450 50  0001 C CNN
@@ -632,7 +626,7 @@ Wire Wire Line
 Wire Wire Line
 	8550 1500 8550 4100
 Wire Wire Line
-	3650 1400 3650 3550
+	3650 1400 3650 1900
 Wire Wire Line
 	5200 3200 5200 3100
 Wire Wire Line
@@ -675,10 +669,10 @@ Wire Wire Line
 Wire Wire Line
 	5500 3000 5500 3200
 $Comp
-L Connector:Conn_01x02_Female J1
+L Connector:Conn_01x02_Female P1
 U 1 1 5C735CDF
 P 4800 850
-F 0 "J1" V 4740 662 50  0000 R CNN
+F 0 "P1" V 4740 662 50  0000 R CNN
 F 1 "Blanking Signal" V 4649 662 50  0000 R CNN
 F 2 "" H 4800 850 50  0001 C CNN
 F 3 "~" H 4800 850 50  0001 C CNN
@@ -686,10 +680,10 @@ F 3 "~" H 4800 850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Conn_01x02_Female J2
+L Connector:Conn_01x02_Female P2
 U 1 1 5C735E3E
 P 6150 850
-F 0 "J2" V 6090 662 50  0000 R CNN
+F 0 "P2" V 6090 662 50  0000 R CNN
 F 1 "Trigger Channel" V 5999 662 50  0000 R CNN
 F 2 "" H 6150 850 50  0001 C CNN
 F 3 "~" H 6150 850 50  0001 C CNN
@@ -706,18 +700,11 @@ Wire Wire Line
 	4900 1400 6250 1400
 Wire Wire Line
 	4500 3000 3500 3000
-Wire Wire Line
-	3500 3000 3500 1050
 Connection ~ 4500 3000
 Wire Wire Line
 	7350 2950 7350 3250
 Wire Wire Line
-	7350 3250 5700 3250
-Wire Wire Line
-	5700 3250 5700 3000
-Wire Wire Line
-	5700 3000 5500 3000
-Connection ~ 5500 3000
+	7350 3250 7050 3250
 Wire Wire Line
 	6950 2950 6950 3200
 Wire Wire Line
@@ -738,10 +725,135 @@ Connection ~ 6150 1600
 Wire Wire Line
 	6150 1600 6150 1050
 Wire Wire Line
-	3500 1050 4800 1050
-Wire Wire Line
 	4700 2850 4700 3000
 Connection ~ 4700 3000
 Wire Wire Line
 	4700 3000 5500 3000
+Wire Wire Line
+	6650 2950 6650 2900
+Wire Wire Line
+	6650 2900 5700 2900
+Wire Wire Line
+	5700 2850 5700 2900
+Wire Wire Line
+	5700 2900 3350 2900
+Connection ~ 5700 2900
+$Comp
+L Device:R R1
+U 1 1 5CE7A744
+P 3100 1550
+F 0 "R1" H 3170 1596 50  0000 L CNN
+F 1 "1k" H 3050 1550 50  0000 L CNN
+F 2 "" V 3030 1550 50  0001 C CNN
+F 3 "~" H 3100 1550 50  0001 C CNN
+	1    3100 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5CE7A7E6
+P 3200 2900
+F 0 "R2" V 3050 2900 50  0000 C CNN
+F 1 "1k" V 3200 2900 50  0000 C CNN
+F 2 "" V 3130 2900 50  0001 C CNN
+F 3 "~" H 3200 2900 50  0001 C CNN
+	1    3200 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 1400 3100 1050
+Wire Wire Line
+	3100 1050 4800 1050
+Wire Wire Line
+	3100 1700 3100 2050
+$Comp
+L Transistor_BJT:2N2219 Q1
+U 1 1 5CEA710A
+P 3100 2250
+F 0 "Q1" V 3336 2250 50  0000 C CNN
+F 1 "2N5089" V 3427 2250 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 3300 2175 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 3100 2250 50  0001 L CNN
+	1    3100 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2900 2350 2650 2350
+Wire Wire Line
+	2650 2350 2650 1900
+Wire Wire Line
+	2650 1900 3650 1900
+Connection ~ 3650 1900
+Wire Wire Line
+	3300 2350 3500 2350
+Wire Wire Line
+	3500 2350 3500 3000
+Wire Wire Line
+	3050 2900 2850 2900
+Wire Wire Line
+	2850 2900 2850 3000
+Wire Wire Line
+	2850 3000 3500 3000
+Connection ~ 3500 3000
+$Comp
+L Device:R R4
+U 1 1 5CECEA9C
+P 7300 3600
+F 0 "R4" V 7200 3650 50  0000 R CNN
+F 1 "220" V 7300 3650 50  0000 R CNN
+F 2 "" V 7230 3600 50  0001 C CNN
+F 3 "~" H 7300 3600 50  0001 C CNN
+	1    7300 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5CED8D2D
+P 7800 3600
+F 0 "R3" V 7700 3600 50  0000 C CNN
+F 1 "470" V 7800 3600 50  0000 C CNN
+F 2 "" V 7730 3600 50  0001 C CNN
+F 3 "~" H 7800 3600 50  0001 C CNN
+	1    7800 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 3800 3900 3800
+Wire Wire Line
+	3650 3800 2250 3800
+Wire Wire Line
+	2250 3800 2250 3850
+Connection ~ 3650 3800
+Wire Wire Line
+	7050 2950 7050 3250
+Wire Wire Line
+	7650 3600 7550 3600
+Wire Wire Line
+	7350 3250 7550 3250
+Wire Wire Line
+	7550 3250 7550 3600
+Connection ~ 7350 3250
+Connection ~ 7550 3600
+Wire Wire Line
+	7550 3600 7450 3600
+Wire Wire Line
+	6850 3000 6850 3800
+Wire Wire Line
+	6850 3800 7950 3800
+Wire Wire Line
+	7950 3800 7950 3600
+Connection ~ 6850 3000
+Wire Wire Line
+	5500 3000 6050 3000
+Wire Wire Line
+	6050 3000 6050 3250
+Wire Wire Line
+	6050 3250 7000 3250
+Wire Wire Line
+	7000 3250 7000 3600
+Wire Wire Line
+	7000 3600 7150 3600
+Connection ~ 5500 3000
+Wire Wire Line
+	3650 1900 3650 3800
 $EndSCHEMATC
