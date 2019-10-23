@@ -73,7 +73,7 @@ development-stage: [value]                 # text
 
 made: true                         # boolean - true or false
 
-made-independently: true           # boolean - true or false
+made-independently: false           # boolean - true or false
 
 #standards-used:
 #  - standard-title: [value]                # Required where used | Title of the standard used in developing the design or documentation
