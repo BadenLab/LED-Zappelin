@@ -36,7 +36,7 @@ title: Tetra Chromatic Stimulator - An OpenSource LED stimulator for visual and 
 
 description: |
     Here we describe an effective, low-cost, opensource LED stimulator, designed to be used in combination with a 2-photon microscope. The design is built around an open-source development board and off-the-shelf components. It has been conceived to be assembled and used without the need for advanced electronics skills.
-    # required | paragraph
+# required | paragraph
 
 intended-use: |                            # recommended | Paragraph
     The tetra chromatic stimulator is meant to be used in laboratory experiments where
