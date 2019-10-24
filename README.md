@@ -16,7 +16,7 @@ Here we describe an effective, low-cost, opensource LED stimulator, designed to 
 ***
 
 The design allows the temporal and spectral separation of the excitation and emission light
-<img align="center" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Schematics.png" width="1000"/>
+<img align="center" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Schematics.png" width="1000"/>
 
 ***
 
