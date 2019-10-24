@@ -15,6 +15,37 @@ Here we describe an effective, low-cost, opensource LED stimulator, designed to 
 
 ***
 
+The design allows the temporal and spectral separation of the excitation and emission light
+<img align="center" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Schematics.png" width="1000"/>
+
+***
+
+The following design can control up to 24 spectral channels with 12 bits linear resolution and 25 μs temporal precision. Our system only requires simple electronics components to be assemble and can be combined.
+Built around an ESP32 micro-controller an LED driver (Adafruit model) and off-the-shelf components for a total cost of ~$50
+
+<img align="center" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Stimulator.png" width="1000"/>
+
+***
+
+The stimulator runs synchronous to the recording system using TTL triggers.
+TTL signals correspond to scanning mirror retrace periods and are used to turn ON and OFF LEDs, thus avoiding swamping the PMTs by stimulation light.
+
+<img align="center" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Blanking.png" width="1000"/>
+
+***
+
+The following design was adjusted for the tetrachromatic zebrafish.
+Stimulating LEDs and optical filters were chosen to match the peak sensitivities of opsin spectra while avoiding overlap with the PMT detection bands.
+
+<img align="center" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Spectra.png" width="1000"/>
+
+***
+
+In this example, light sources are combined and directed through the onjective.
+
+<img align="center" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Schematics.png" width="1000"/>
+
+***
 ## Repository structure
 
 ```
@@ -53,32 +84,5 @@ Here we describe an effective, low-cost, opensource LED stimulator, designed to 
 └───References                                Publication used to design and conceive this model
 
 ```
-
-***
-
-The following design can control up to 24 spectral channels with 12 bits linear resolution and 25 μs temporal precision. Our system only requires simple electronics components to be assemble and can be combined.
-Built around an ESP32 micro-controller an LED driver (Adafruit model) and off-the-shelf components for a total cost of ~$50
-
-<img align="center" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Stimulator.png" width="1000"/>
-
-***
-
-The stimulator runs synchronous to the recording system using TTL triggers.
-TTL signals correspond to scanning mirror retrace periods and are used to turn ON and OFF LEDs, thus avoiding swamping the PMTs by stimulation light.
-
-<img align="center" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Blanking.png" width="1000"/>
-
-***
-
-The following design was adjusted for the tetrachromatic zebrafish.
-Stimulating LEDs and optical filters were chosen to match the peak sensitivities of opsin spectra while avoiding overlap with the PMT detection bands.
-
-<img align="center" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Spectra.png" width="1000"/>
-
-***
-
-In this example, light sources are combined and directed through the onjective.
-
-<img align="center" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Schematics.png" width="1000"/>
 
 ***
