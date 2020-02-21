@@ -16,8 +16,8 @@ The hardware is licensed under the [CERN OHL v1.2](https://github.com/BadenLab/T
 - [An open and versatile LED controler](#Introduction)
 - [A £100 DIY efficient stimulator](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Bills%20of%20Materials/BOM%20-%20Stimulator.ods)
 - [A stimulator for visual neuroscience](#Colour-Vision-Experiment)
-- [A Stimulator for optogenetics](#Optogenetics-Experiment:)
-- [A detailed assembly and instruction manual is available] (https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Stimulator_Calibration.ipynb)
+- [A Stimulator for optogenetics](#Optogenetics-Experiment)
+- [A detailed assembly and instruction manual is available](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Stimulator_Calibration.ipynb)
 - [Repository Structure](#Repository-Structure)
 
 ***
@@ -33,9 +33,9 @@ Here, we present such a solution. Our system can line-synch up to 24 independent
 
 Alongside, we also provided a custom 3D-printed casing, designed suggestions for optically combining LED banks using Thorlabs parts, and an alternative 3D-printed LED holder and microscope chamber. For software control, we provided custom Arduino scripts to flexibly programme stimulation protocols.
 
-<img align="center" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Fig1.png"/>
+<img align="center" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Fig1.png">
 
-a) A fully assembled stimulator. b) Rendering of the custom-printed circuit board which accommodates the microcontroller, the LED driver and up to 24 LED channels. c) Schematics illustrating the circuit that controls the LED output. The blanking input can be inverted by a switch before reaching the output enable pin on the LED driver (electronically switching off the LEDs) and sending the signal to the micro-controller. A second switch control the blanking signal voltage as it needs to be adapted depending on the logic of the microcontroller used (3.3V for ESP32, 5V for Arduino). The microcontroller controls the LED driver through an SPI connection and send trigger signal output to an external. d) Illustration of the raster scan method described. The “blanking signal” is synchronous with the scanning logic, enabling the LEDs during the scanning mirrors retrace (black) and shutting them off during the acquisition (red), therefore providing temporal separation between stimulation and detection (Modified from [Euler et al. 2019](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/References/Euler%202019%20-%20Studying%20a%20Light%20Sensor%20with%20Light,%20Multiphoton%20Imaging%20in%20the%20Retina.pdf).
+a) A fully assembled stimulator. b) Rendering of the custom-printed circuit board which accommodates the microcontroller, the LED driver and up to 24 LED channels. c) Schematics illustrating the circuit that controls the LED output. The blanking input can be inverted by a switch before reaching the output enable pin on the LED driver (electronically switching off the LEDs) and sending the signal to the micro-controller. A second switch control the blanking signal voltage as it needs to be adapted depending on the logic of the microcontroller used (3.3V for ESP32, 5V for Arduino). The microcontroller controls the LED driver through an SPI connection and send trigger signal output to an external. d) Illustration of the raster scan method described. The “blanking signal” is synchronous with the scanning logic, enabling the LEDs during the scanning mirrors retrace (black) and shutting them off during the acquisition (red), therefore providing temporal separation between stimulation and detection (Modified from [Euler et al. 2019](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/References/Euler%202019%20-%20Studying%20a%20Light%20Sensor%20with%20Light,%20Multiphoton%20Imaging%20in%20the%20Retina.pdf)).
 
 ***
 
@@ -43,14 +43,14 @@ The stimulator runs synchronous to the recording system using TTL triggers.
 The TTL signals correspond to scanning mirror retrace periods and are used to turn ON and OFF LEDs, thus avoiding swamping the PMTs by stimulation light.
 On the PCB, we incorporated a signal inverter which can be enabled through a jumper (see below) and that can modulated the TTL signal sign. This customisable option thus offers the possibility for a single design to be easily adapted to multiple imaging systems.
 
-<img align="center" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Fig2.png" />
+<img align="center" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Fig2.png">
 a) Oscilloscope reading of the blanking signal (blue) efficiently switching off an LED (yellow). The blanking is operated here without noticeable delay. b) Same as a), showing for a 1ms scanning cycle, the two possible configurations for the blanking signal input, with a low (top) and a high (bottom) blanking signal input respectively for an inverted and original signal input.
 
 ***
 
 The use of a dedicated constant current LED driver tends to improve LED stability over time as well as its life span. Such driver ensures that the current drawn by the LED never leads to thermal runaways that might cause irreversible damage. This is particularly essential for short wavelength LEDs which tend to rapidly decay, thus necessitating regular recalibration or replacement.
 
-<img align="center" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Fig3.png" />
+<img align="center" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Fig3.png">
 a) Power recording of a 4 LED system using the TLC5947 (solid lines) and their expected brightness if directly controlled by a microcontroller (dashed lines). All LEDs have been set up to the same power (40nW), with equal max intensities values in the Arduino code. b) Same as a) but with LEDs set up at different max intensities in the Arduino code. Here the linearity of the LED intensity output remains constant.
 
 ***
@@ -70,9 +70,11 @@ Following [established protocols](https://github.com/BadenLab/Tetra-Chromatic-St
 
 We presented full field steps of red, green, blue and UV light to the fish eye (respectively 567, 480, 420 and 365nm), and recorded evoked calcium signals as a readout of synaptic activity. We observed spectrally different tunings from distinct bipolar cell terminals  without detectable stimulus artefact across the scan.
 
-<img align="center" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Fig8.png" />
+<img align="center" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Fig8.png">
 
 ***
+
+## Optogenetics Experiment
 
 In addition to colour vision experiments, the Open Light-Stimulator is well suited for optogenetic manipulations.
 
@@ -84,9 +86,8 @@ We presented full field illumination steps of 615 nm light lasting 0.5 s and an 
 
 We observed robust stimulus-evoked activity in the primary olfactory sensory centres of the larval brain, the antennal lobes (red outlines). Similarly to colour vision experiments, we detected no light artefact.
 
-<img align="center" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Fig8.png" />
+<img align="center" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Fig9.png">
 
-## Optogenetics Experiment:
 
 
 ***
