@@ -157,7 +157,7 @@ Follow the installation instructions from the [Espressif repository](https://git
 
 <p align="justify">–	The *array_Time* array corresponds to the duration of each entry in ms; the first entry being the pre-adaptation that will only be played at the start of the stimulus, the sequence will then loop starting at the second position. </p>
 
-<img src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Arduino%20Code.png">
+<img align="center" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Arduino%20Code.png">
 
 For example, if …
 
