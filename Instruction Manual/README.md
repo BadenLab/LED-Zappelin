@@ -76,6 +76,8 @@ We used [OpenSCAD](www.openscad.com) to design the stimulator box. The tolerance
 
 <img src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Fig5.png">
 
+a) Rendering of the stimulator box 3D files set here by default for 4 LED channels and 4 proxy LEDs. b) Rendering of the fully mounted stimulator with all PCBs and components tightly fitting their respective space.
+
 The PCB is screwed to the “Bottom” part of the box by using M3 screws and nuts. The potentiometer board adjusts itself with the “Back” part of the box, and the trimmers should adapt to their respective holes exactly.
 All part should fit tightly together and are maintained together by 4 M3*50mm socket screws.
 
@@ -97,6 +99,7 @@ For our visual stimulation setup, we combined all LED light sources into one bea
 For the optogenetics experiment we 3D-designed arenas where the sample sits, surrounded by  four LEDs.
 
 <img src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Fig6.png">
+a) SCAD files for adapting 3mm LEDs and dichroic mirrors to standard 30mm optomechanical system. b) Rendering of the LED illumination system for the visual experiment. c) For optogenetics experiment, we designed a mounting platform that holds four 3mm LEDs and can fit a RC-40HP chamber (SmartEphys, Warner Instrument).  d) Same as c) but designed to fit a small petri dish (ø 35mm) lid.
 
 ***
 
