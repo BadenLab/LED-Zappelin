@@ -29,8 +29,8 @@ Baden Lab, CRPC, School of Life Sciences, University of Sussex, United Kingdom
 -------------------------------------------------------------------------------------*/                                                                                             
 
 int           nLoops           = 500;     //  Number of repeats of the arrays (i.e. Loops)
-const int     nArrayEntries    = 3;      //  Number of entries in the arrays, including preadaption at position 0
-const int     Scan_Logic      =  2;      //  Scanning logic (1 for 1ms scans, 2 for 2ms scans, etc.)
+const int     nArrayEntries    = 3;       //  Number of entries in the arrays, including preadaption at position 0
+const int     Scan_Logic       = 2;       //  Scanning logic (1 for 1ms scans, 2 for 2ms scans, etc.)
 
 
 
@@ -54,7 +54,7 @@ const int8_t array_LED4[] PROGMEM = {
 
 // The array_Time values are expressed in milliseconds
 const int16_t array_Time[] PROGMEM = {      
-100,100,100
+5000,1000,1000
 };
 
 // // // // // // // // // // // // // // // // // // // // // // // // // // //
@@ -307,11 +307,11 @@ void loop(){
 // Execute command
     switch (sCmd) {
 
-      case 'a':                                         // Array Stimulus at "Full power"
+      case 'a':                                         // Array Stimulus at Power Intensity 1
 
           if(SettingFlag==true){
             digitalWrite(pSyncOut,LOW);
-            Serial.println("Playing Arrays, LEDs set at maximum intensities (press '0' to abort)");  
+            Serial.println("Playing Arrays, LEDs set at intensities 1 (press '0' to abort)");  
             Serial.print(nLoops);
             Serial.println(" Loops");
             PulseCount = 0;                             // Reset pulse counter
@@ -353,7 +353,7 @@ void loop(){
             
             BlankingFlag = true;
 
-            // Option to interrupt // MAY BE TOO SLOW
+            // Option to interrupt 
             if(Serial.available()) {
                 sCmd = Serial.read(); 
                 switch (sCmd) {
@@ -368,11 +368,11 @@ void loop(){
       break;
 
 
-      case 'b':                                         // Array Stimulus at "Nat Stat"
+      case 'b':                                         // Array Stimulus at Power Intensity 2
 
           if(SettingFlag==true){
             digitalWrite(pSyncOut,LOW);
-            Serial.println("Playing Arrays, LEDs set at minimum intensities (press '0' to abort)");  
+            Serial.println("Playing Arrays, LEDs set at intensities 2 (press '0' to abort)");  
             Serial.print(nLoops);
             Serial.println(" Loops");
             PulseCount = 0;                             // Reset pulse counter
