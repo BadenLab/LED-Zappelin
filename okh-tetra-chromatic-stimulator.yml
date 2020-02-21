@@ -7,7 +7,7 @@
 
 date-created: 2019-10-15                     # YYYY-MM-DD
 
-#date-updated: [value]                      # YYYY-MM-DD
+date-updated: 2020-02-21                      # YYYY-MM-DD
 
 manifest-author:
   name:  Andre Maia Chagas                 # required | text
@@ -32,10 +32,10 @@ documentation-language: English-UK
 
 # Properties
 
-title: Tetra Chromatic Stimulator - An OpenSource LED stimulator for visual and optogenetics stimulation in combination with 2-photon recordings.   # required | text | A title to identify the thing
+title: Open Light-Stimuator, An open source and versatile LED controller for arbitrary spectrum visual stimulation and optogenetics during 2-photon imaging.   # required | text | A title to identify the thing
 
 description: |
-    Here we describe an effective, low-cost, opensource LED stimulator, designed to be used in combination with a 2-photon microscope. The design is built around an open-source development board and off-the-shelf components. It has been conceived to be assembled and used without the need for advanced electronics skills.
+    Two-photon (2P) microscopy is a cornerstone technique in neuroscience research, but combining this technology with spectrally arbitrary light stimulation can be challenging due to crosstalk between stimulation light and fluorescence detection. To overcome this limitation, we present a simple and low-cost electronic solution based on an ESP32 microcontroller and a TLC5947 LED driver to rapidly time-interleave stimulation and detection epochs during scans. Implemented for less than $100, our design can independently drive up to 24 arbitrary spectrum LEDs to meet user requirements. We demonstrate the utility of our stimulator for colour vision experiments on the in vivo tetrachromatic zebrafish retina and for optogenetic circuit mapping in Drosophila.
 # required | paragraph
 
 intended-use: |                            # recommended | Paragraph
@@ -53,21 +53,21 @@ project-link: https://github.com/BadenLab/Tetra-Chromatic-Stimulator       # At 
 #  [value]
 
 contact:
-  name: Maxime Zimmerman                            # text
+  name: Maxime Zimmermann                            # text
   affiliation: University of Sussex                     # text
-  email: M.zimmermann@sussex.ac.uk                           # email address
+  email: m.zimmermann@sussex.ac.uk                           # email address
   social:
     - platform: Twitter                    # text
       user-handle: "@MJY_Zimmermann"                 # text
 
-#contributors:                              # recommended
-#  - name: [contributor 1]                  # text
-#    affiliation: [value]                   # text
-#    email: [value]                         # email address
+contributors:                              # recommended
+  - name: Andre Maia Chagas                  # text
+    affiliation: University of Sussex                   # text
+    email: a.maia-chagas@sussex.ac.uk                         # email address
 
-#image: [value]                             # recommended | absolute or relative path
+image: https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Fig1.png                             # recommended | absolute or relative path
 
-version: 1.0                           # text
+version: 2.2                           # text
 
 development-stage: [value]                 # text
 
@@ -104,10 +104,10 @@ made-independently: false           # boolean - true or false
 license:                                   # At least one license is required | The format should be an SPDX identifier. See https://spdx.org/licenses/hardware: [value] # recommended | The license under which the hardware is released
   hardware: CERN OHL v1.2                        # recommended | The license under which the documentation is released
   documentation: GPL-3.0                   # recommended | The license under which the documentation is released
-  software: CC-BY-SA v4.0                        # recommended where software is used | The license under which the software is released
+  software: CC-BY-SA v4.0                             # recommended where software is used | The license under which the software is released
 
 licensor:
-  name: Maxime Zimmerman                        # text
+  name: Maxime Zimmermann                        # text
   affiliation: University of Sussex             # text
   email: M.zimmermann@sussex.ac.uk              # email address
 
@@ -117,13 +117,13 @@ documentation-home: https://github.com/BadenLab/Tetra-Chromatic-Stimulator    # 
 
 #archive-download: [value]                 # Absolute or relative path
 
-#design-files:                             # recommended
-#  - path: [value]                         # Absolute or relative path
-#    title: [value]                        # text
+design-files:                             # recommended
+  - path: https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/3D%20Designs                        # Absolute or relative path
+    title: 3D-printed parts                       # text
 
-#schematics:                               # recommended where applicable
-#  - path: [value]                         # Absolute or relative path
-#    title: [value]                        # text
+schematics:                               # recommended where applicable
+  - path: https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/Images/Schematics                        # Absolute or relative path
+    title: Hardware Schematics                        # text
 
 bom: https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/Bills%20of%20Materials        # recommended | absolute or relative path | Direct the maker to the Bill of Materials
 
@@ -133,9 +133,9 @@ making-instructions:                      # recommended
   - path: https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/Instruction%20Manual     # Absolute or relative path
     title: Instruction Manual                        # text
 
-#manufacturing-files:                      # recommended where applicable
-#  - path: [value]                         # Absolute or relative path
-#    title: [value]                        # text
+manufacturing-files:                      # recommended where applicable
+  - path: https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/PCB/Stimulator                       # Absolute or relative path
+    title: Custom Built PCB                        # text
 
 #risk-assessment:                          # recommended
 #  - path: [value]                         # Absolute or relative path
@@ -149,9 +149,9 @@ making-instructions:                      # recommended
 #  - path: [value]                         # Absolute or relative path
 #    title: [value]                        # text
 
-#operating-instructions:                   # recommended
-#  - path: [value]                         # Absolute or relative path
-#    title: [value]                        # text
+operating-instructions:                   # recommended
+  - path: https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/Instruction%20Manual#Operating-the-Stimulator                         # Absolute or relative path
+    title: Operating Instructions                        # text
 
 #maintenance-instructions: [value]         # recommended
 #  - path: [value]                         # Absolute or relative path
@@ -161,9 +161,9 @@ making-instructions:                      # recommended
 #  - path: [value]                         # Absolute or relative path
 #    title: [value]                        # text
 
-#software:                                 # recommended where applicable | Source code or executable software that the thing uses
-#  - path: [value]                         # Absolute or relative path
-#    title: [value]                        # text
+software:                                 # recommended where applicable | Source code or executable software that the thing uses
+  - path: https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/Arduino%20code                         # Absolute or relative path
+    title: Software                        # text
 
 # User defined Fields
 # Include any custom / extended fields here
