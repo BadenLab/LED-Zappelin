@@ -17,7 +17,7 @@ The hardware is licensed under the [CERN OHL v1.2](https://github.com/BadenLab/T
 - [A £100 DIY efficient stimulator](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Bills%20of%20Materials/BOM%20-%20Stimulator.ods)
 - [A stimulator for visual neuroscience](#Colour-Vision-Experiment)
 - [A Stimulator for optogenetics](#Optogenetics-Experiment)
-- [A detailed assembly and instruction manual is available](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Stimulator_Calibration.ipynb)
+- [A detailed assembly and instruction manual](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/README.md)
 - [Repository Structure](#Repository-Structure)
 
 ***
