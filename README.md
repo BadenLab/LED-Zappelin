@@ -42,36 +42,36 @@ This problem can be readily solved electronically, for example through use of a 
 
 ***
 
-<p align="justify">The stimulator runs synchronous to the recording system using TTL triggers.
-TTL signals correspond to scanning mirror retrace periods and are used to turn ON and OFF LEDs, thus avoiding swamping the PMTs by stimulation light.
+<p align="justify">The stimulator runs synchronous to the recording system using TTL triggers. TTL signals correspond to scanning mirror retrace periods and are used to turn ON and OFF LEDs, thus avoiding swamping the PMTs by stimulation light.
+
 On the PCB, we incorporated a signal inverter which can be enabled through a jumper (see below) and that can modulated the TTL signal sign. This customisable option thus offers the possibility for a single design to be easily adapted to multiple imaging systems.</p>
 
 <img align="center" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Fig2.png">
-<h5 align="justify"> a) Oscilloscope reading of the blanking signal (blue) efficiently switching off an LED (yellow). The blanking is operated here without noticeable delay. b) Same as a), showing for a 1ms scanning cycle, the two possible configurations for the blanking signal input, with a low (top) and a high (bottom) blanking signal input respectively for an inverted and original signal input. </5>
+<h5 align="justify"> a) Oscilloscope reading of the blanking signal (blue) efficiently switching off an LED (yellow). The blanking is operated here without noticeable delay. b) Same as a), showing for a 1ms scanning cycle, the two possible configurations for the blanking signal input, with a low (top) and a high (bottom) blanking signal input respectively for an inverted and original signal input. </h5>
 
 ***
 
-The use of a dedicated constant current LED driver tends to improve LED stability over time as well as its life span. Such driver ensures that the current drawn by the LED never leads to thermal runaways that might cause irreversible damage. This is particularly essential for short wavelength LEDs which tend to rapidly decay, thus necessitating regular recalibration or replacement.
+<p align="justify"> The use of a dedicated constant current LED driver tends to improve LED stability over time as well as its life span. Such driver ensures that the current drawn by the LED never leads to thermal runaways that might cause irreversible damage. This is particularly essential for short wavelength LEDs which tend to rapidly decay, thus necessitating regular recalibration or replacement. </p>
 
 <img align="center" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Fig3.png">
-a) Power recording of a 4 LED system using the TLC5947 (solid lines) and their expected brightness if directly controlled by a microcontroller (dashed lines). All LEDs have been set up to the same power (40nW), with equal max intensities values in the Arduino code. b) Same as a) but with LEDs set up at different max intensities in the Arduino code. Here the linearity of the LED intensity output remains constant.
+<h5 align="justify">  a) Power recording of a 4 LED system using the TLC5947 (solid lines) and their expected brightness if directly controlled by a microcontroller (dashed lines). All LEDs have been set up to the same power (40nW), with equal max intensities values in the Arduino code. b) Same as a) but with LEDs set up at different max intensities in the Arduino code. Here the linearity of the LED intensity output remains constant. </5>
 
 ***
 
 ## Colour Vision Experiment
 
-We used the Open Light-Stimulator for studying the retinal processing of the tetrachromatic zebrafish retina in response to multichromatic signal.
+<p align="justify">We used the Open Light-Stimulator for studying the retinal processing of the tetrachromatic zebrafish retina in response to multichromatic signal.
 Here we selected four LEDs that match the peak sensitivities of each cone opsins of our model.
-We chose LEDs and band pass filters in such manner that the stimulating light and the detection bands do not overlap as much as possible. However a temporal separation is still necessary to avoid some overlapping and any light artifact.
+We chose LEDs and band pass filters in such manner that the stimulating light and the detection bands do not overlap as much as possible. However a temporal separation is still necessary to avoid some overlapping and any light artifact. </p>
 
 <img align="center" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Spectra.png" width="1000"/>
 
 
-We recorded light-driven calcium signals under 2-photon from [retinal bipolar cells in vivo in the tetrachromatic larval zebrafish](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/References/Zimmermann%202018%20-%20Zebrafish%20Differentially%20Procces%20Colour%20across%20Visual%20Space%20to%20Match%20Natural%20Scenes.pdf). We used a transgenic line expressing a genetically encoded biosensors for calcium at the  bipolar cell synaptic terminals level (ctbp2:SyGCaMP6)  within the inner plexiform layer (IPL).
+<p align="justify"> We recorded light-driven calcium signals under 2-photon from [retinal bipolar cells in vivo in the tetrachromatic larval zebrafish](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/References/Zimmermann%202018%20-%20Zebrafish%20Differentially%20Procces%20Colour%20across%20Visual%20Space%20to%20Match%20Natural%20Scenes.pdf). We used a transgenic line expressing a genetically encoded biosensors for calcium at the  bipolar cell synaptic terminals level (ctbp2:SyGCaMP6)  within the inner plexiform layer (IPL). </p>
 
-Following [established protocols](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/References/Denk%202009%20-%20Eyecup%20Scope%20-%20optical%20recordings%20of%20light%20stimulus-evoked%20fluorescence%20signals%20in%20the%20retina.pdf), we used a Sutter MOM microscope where light stimulation is displayed through the objective directly onto the fish retina along with the laser excitation. Fluorescence is also collected through the objective as well as from below the stage (not shown).
+<p align="justify">Following [established protocols](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/References/Denk%202009%20-%20Eyecup%20Scope%20-%20optical%20recordings%20of%20light%20stimulus-evoked%20fluorescence%20signals%20in%20the%20retina.pdf), we used a Sutter MOM microscope where light stimulation is displayed through the objective directly onto the fish retina along with the laser excitation. Fluorescence is also collected through the objective as well as from below the stage (not shown).</p>
 
-We presented full field steps of red, green, blue and UV light to the fish eye (respectively 567, 480, 420 and 365nm), and recorded evoked calcium signals as a readout of synaptic activity. We observed spectrally different tunings from distinct bipolar cell terminals  without detectable stimulus artefact across the scan.
+<p align="justify">We presented full field steps of red, green, blue and UV light to the fish eye (respectively 567, 480, 420 and 365nm), and recorded evoked calcium signals as a readout of synaptic activity. We observed spectrally different tunings from distinct bipolar cell terminals  without detectable stimulus artefact across the scan. </p>
 
 <img align="center" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Fig8.png">
 
