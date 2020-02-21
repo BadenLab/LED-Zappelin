@@ -3,16 +3,19 @@
 <h4 align="center">An open source and versatile LED controller for arbitrary spectrum visual stimulation and optogenetics during 2-photon imaging.</h4>
 <p align="center"><h6 align="right">by M.J.Y. Zimmermann, A.M. Chagas, P. Bartel, S. Pop, L.L. Prieto Godino & T. Baden</h6></p>
 
+
 This project is licensed under the [GNU General Public License v3.0](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/LICENSE)
+
 The hardware is licensed under the [CERN OHL v1.2](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/PCB/LICENSE)
 
+***
 
 #### Two-photon (2P) microscopy is a cornerstone technique in neuroscience research, but combining this technology with spectrally arbitrary light stimulation can be challenging due to crosstalk between stimulation light and fluorescence detection. To overcome this limitation, we present a simple and low-cost electronic solution based on an ESP32 microcontroller and a TLC5947 LED driver to rapidly time-interleave stimulation and detection epochs during scans. Implemented for less than $100, our design can independently drive up to 24 arbitrary spectrum LEDs to meet user requirements. We demonstrate the utility of our stimulator for colour vision experiments on the in vivo tetrachromatic zebrafish retina and for optogenetic circuit mapping in Drosophila.
 
 ***
 - [An open and versatile LED controler](#Introduction)
 - [A £100 DIY efficient stimulator](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Bills%20of%20Materials/BOM%20-%20Stimulator.ods)
-- [A stimulator for visual neuroscience](#Colour-Vision-Experiment:)
+- [A stimulator for visual neuroscience](#Colour-Vision-Experiment)
 - [A Stimulator for optogenetics](#Optogenetics-Experiment:)
 - [A detailed assembly and instruction manual is available] (https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Stimulator_Calibration.ipynb)
 - [Repository Structure](#Repository-Structure)
@@ -52,7 +55,7 @@ a) Power recording of a 4 LED system using the TLC5947 (solid lines) and their e
 
 ***
 
-## Colour Vision Experiment:
+## Colour Vision Experiment
 
 We used the Open Light-Stimulator for studying the retinal processing of the tetrachromatic zebrafish retina in response to multichromatic signal.
 Here we selected four LEDs that match the peak sensitivities of each cone opsins of our model.
