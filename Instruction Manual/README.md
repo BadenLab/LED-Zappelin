@@ -143,7 +143,7 @@ Follow the installation instructions from the [Espressif repository](https://git
 ## Operating the Stimulator
 <p align="center"><h4 align="left">The code is organised in five distinct part:</h4></p>
 
-  Stimulus Parameters
+  <h4>Stimulus Parameters</h4>
 
 <p align="justify">The code is designed to iteratively loop a pre-programmed stimulus sequence after an initial one-off optional preadaptation period
 
@@ -180,7 +180,7 @@ Array_Time = {5000,1000,1000};
 
 ***
 
-  Microcontroller Board Selection
+  <h4>Microcontroller Board Selection</h4>
 
 This is where the user defines if he is using an ESP32 or an Arduino Nano
 
