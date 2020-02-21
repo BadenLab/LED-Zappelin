@@ -114,7 +114,7 @@ All part should fit tightly together and are maintained together by 4 M3*50mm so
 
 <p align="justify">Finally, the board is connected to a computer via USB (micro USB for ESP32, mini USB for Arduino Nano). </p>
 
-<img align="center" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Schematics.png" width="1000"/>
+<img src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Schematics.png" width="1000"/>
 
 ***
 
@@ -157,7 +157,7 @@ Follow the installation instructions from the [Espressif repository](https://git
 
 <p align="justify">–	The *array_Time* array corresponds to the duration of each entry in ms; the first entry being the pre-adaptation that will only be played at the start of the stimulus, the sequence will then loop starting at the second position. </p>
 
-<img align="center" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Arduino%20Code.png">
+<img src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Arduino%20Code.png"/>
 
 For example, if …
 
