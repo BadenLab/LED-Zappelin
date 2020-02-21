@@ -1,6 +1,5 @@
 ﻿<p align="right"><img src="https://github.com/BadenLab/Zebrafish-visual-space-model/blob/master/Images/Logo.png" width="300"/>
 <h1 align="center">Instruction Manual</h1></p>
-<h1 align="center">Open Light-Stimulator</h1>
 
 ***
 
@@ -8,11 +7,11 @@
 
 <img align="right" width="600" height="300" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Stimulator.png">
 
-This document contains detailed assembly instructions, a software guideline to customize stimuli, and includes a parts list.
+<p align="justify">This document contains detailed assembly instructions, a software guideline to customize stimuli, and includes a parts list.</p>
 
- The Arduino code and 3D printing files (SCAD and STL) can be downloaded [here](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/3D%20Designs), and further modified to fit customise purposes. The aim of this device is to finely control LEDs used in combination with a 2-photon microscope.
+ <p align="justify">The Arduino code and 3D printing files (SCAD and STL) can be downloaded [here](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/3D%20Designs), and further modified to fit customise purposes. The aim of this device is to finely control LEDs used in combination with a 2-photon microscope. </p>
 
-The device consists of a custom-designed PCB, an [ESP32 development board](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather) (or an Arduino Nano if the stimulator does not need to be combined with a 2 photon microscope), a [LED driver](https://learn.adafruit.com/tlc5947-tlc59711-pwm-led-driver-breakout/overview) and various off-the-shelf components.
+<p align="justify">The device consists of a custom-designed PCB, an [ESP32 development board](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather) (or an Arduino Nano if the stimulator does not need to be combined with a 2 photon microscope), a [LED driver](https://learn.adafruit.com/tlc5947-tlc59711-pwm-led-driver-breakout/overview) and various off-the-shelf components. </p>
 
 ***
 
