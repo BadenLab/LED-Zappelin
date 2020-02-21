@@ -100,7 +100,7 @@ All part should fit tightly together and are maintained together by 4 M3*50mm so
 
 <p align="justify">For the optogenetics experiment we 3D-designed arenas where the sample sits, surrounded by  four LEDs. </p>
 
-<img align="center" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Fig6.png">
+<img src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Fig6.png">
 <h5 align="justify">a) SCAD files for adapting 3mm LEDs and dichroic mirrors to standard 30mm optomechanical system. b) Rendering of the LED illumination system for the visual experiment. c) For optogenetics experiment, we designed a mounting platform that holds four 3mm LEDs and can fit a RC-40HP chamber (SmartEphys, Warner Instrument).  d) Same as c) but designed to fit a small petri dish (ø 35mm) lid. </h5>
 
 ***
