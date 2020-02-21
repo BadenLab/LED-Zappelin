@@ -186,7 +186,7 @@ This is where the user defines if he is using an ESP32 or an Arduino Nano
 
 ***
 
-  Internal Definitions
+  <h4>Internal Definitions</h4>
 
 This is the main definition part of the code which can be modified to:
 
@@ -198,13 +198,13 @@ This is the main definition part of the code which can be modified to:
 
 ***
 
-  Internal Methods
+  <h4>Internal Methods</h4>
 
 This is the main core of the code and should not be structurally changed (apart from adding more LEDs, as required).
 
 ***
 
-  Main Loop
+  <h4>Main Loop</h4>
 
 This is where the stimuli controls are defined. By default, when compile window is open (magnifying glass on the top right corner) and the baud rate at the bottom right of the window has be changed to 115200, a manual command will trigger a stimulus:
 
@@ -231,19 +231,19 @@ Important to note, obviously the stimulation will only be played if a blanking s
 
 ## Calibrating the Stimulator
 
-Stimulating LEDs can be approximately brought into a desired intensity regime by adding a serial resistor to limit the current they receive (c.f. 5.2). They can also be further calibrated within the code:
+<p align="justify">Stimulating LEDs can be approximately brought into a desired intensity regime by adding a serial resistor to limit the current they receive (c.f. 5.2). They can also be further calibrated within the code:
 
-The TLC5947 is a 12-bit PWM grayscale driver, meaning that it offers up to 4,096 grey levels to adjust each LED power.
+<p align="justify">The TLC5947 is a 12-bit PWM grayscale driver, meaning that it offers up to 4,096 grey levels to adjust each LED power.
 
-On the Arduino code there is a second tab called “LED_values” which hard-codes the maximum power an LED can get. Those values range from 0 (no current) to 4095 (max current, 15 mA by default with potentiometer tuned all the way down).
+<p align="justify">On the Arduino code there is a second tab called “LED_values” which hard-codes the maximum power an LED can get. Those values range from 0 (no current) to 4095 (max current, 15 mA by default with potentiometer tuned all the way down).
 
-On the default script we defined two distinct max values (max1 & max2) that can be called individually. The purpose here is to have the opportunity to use the same stimulus sequence at two different regimes of light intensities. More can be added manually by the user.
+<p align="justify">On the default script we defined two distinct max values (max1 & max2) that can be called individually. The purpose here is to have the opportunity to use the same stimulus sequence at two different regimes of light intensities. More can be added manually by the user. </p>
 
 <img src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/LED%20Values.png">
 
-For the calibration, we suggest setting the max_LED# value to 4095 (full power) and use successively a spectrometer and a powermeter to adjust the LED brightness by finely turning the trimmer potentiometer at the back of the stimulator.
+<p align="justify">For the calibration, we suggest setting the max_LED# value to 4095 (full power) and use successively a spectrometer and a powermeter to adjust the LED brightness by finely turning the trimmer potentiometer at the back of the stimulator.
 
-As the LED output is linear relative to the values entered here (Fig. 3), any max_LED# value will be proportional to the LED power set up for the 4095 value. The LED value (0-100%) entered in the stimulus sequence is linearly mapped to 0-max_LED#.
+<p align="justify">As the LED output is linear relative to the values entered here (Fig. 3), any max_LED# value will be proportional to the LED power set up for the 4095 value. The LED value (0-100%) entered in the stimulus sequence is linearly mapped to 0-max_LED#.</p>
 
 We also provide a calibration script in the form of an [iPyhton jupyter notebook](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Stimulator_Calibration.ipynb). This script was designed to calibarte a 4 LEDs system for experiment on the zebrafish retina.
 
@@ -279,7 +279,7 @@ From this recording, the peak wavelength of each LED is extracted and assigned t
 Depending on the LEDs used or on the extra resistors that a user might want to connect in series to substantially tune down the LEDs, a powermeter shall be used to bring the LEDs to their desired max values. Here we suggest to set the potentiometers at mid-range and replace the spectrometer sensor by the powermeter's. In our case, we used a [ThorLabs Digital Handheld Optical Power](https://www.thorlabs.de/newgrouppage9.cfm?objectgroup_id=3341) coupled with a [ThorLabs Photodiode Power Sensor S130VC](https://www.thorlabs.de/thorproduct.cfm?partnumber=S130VC), 200 - 1100 nm, 50 mW. Each LED is then successively brought to their desired maximum power (here 40nW) and the powermeter configured to the LED peak wavelengths (λmax). Once this value has been reached, the *max_LED* value in the LED Values part of the Arduino code has to be decreased until a change is oberved. The max_LED value is then hard-coded and fine tuning can be achieved with the potentiometers.
 At this stage, one might retake measurements with the spectrometer with this new power (in our case equalised amongst LEDs), and rerun the first part of this script to obtain more precise curves.
 
-To establish the LEDs performance we then plotted their normalised intensities (LED relative brightness) against the PWM (*array_LED#*) used in the Arduino code to drive them. A Linear fit along with the Sum of Square Error (SSE), demonstrates that the TLC5947 LED driver controls the LED in an optimal linear manner.
+<p align="justify">To establish the LEDs performance we then plotted their normalised intensities (LED relative brightness) against the PWM (*array_LED#*) used in the Arduino code to drive them. A Linear fit along with the Sum of Square Error (SSE), demonstrates that the TLC5947 LED driver controls the LED in an optimal linear manner.</p>
 
 <img align="center" width="800" height="200" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Normalised%20Intensity%20VS%20Forward%20Current.png">
 
@@ -291,9 +291,9 @@ We then used the absorbance spectrum fitting template for visual pigment defined
 
 ***
 
-Using the same display we plotted the LEDs spectra that we obtained from the spectrometer recordings.
+<p align="justify">Using the same display we plotted the LEDs spectra that we obtained from the spectrometer recordings.
 
-Then, we plotted the LED spectra along the cone opsin absorbance, and each LED’s spectral cross-section with respective target conein solid colours. Grey boxes indicate the positions of the two PMT detector bands. The Red-LED’s long-wavelength emission spectrum was chosen to limit spectral overlap with the red-fluorescence detection channel. Any loss in excitation efficiency of the red opsin was compensated for by increasing this LED’s power accordingly.
+<p align="justify">Then, we plotted the LED spectra along the cone opsin absorbance, and each LED’s spectral cross-section with respective target conein solid colours. Grey boxes indicate the positions of the two PMT detector bands. The Red-LED’s long-wavelength emission spectrum was chosen to limit spectral overlap with the red-fluorescence detection channel. Any loss in excitation efficiency of the red opsin was compensated for by increasing this LED’s power accordingly. </p>
 
 <img align="center" width="900" height="600" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Opsin-LED%20Spectra.png">
 
