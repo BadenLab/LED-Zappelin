@@ -61,6 +61,8 @@ Schematics and PCB footprint can be downloaded and modified from the same reposi
 <p align="center"><h4 align="left">3 – Mounting the potentiometer</h4></p>
 <img align="right" width="250" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Fig4.png">
 
+</br>
+
 In order to finely adjust each LED power, we added multiple-turn trimmer potentiometers to our design. A simple solution is to manufacture the appropriate PCB board (We provide multiple options on the [GitHub repository](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/PCB/Potentiometer%20Mounts)).
 
 <p align="justify">Otherwise, one can make its own little PCB by using a solderable board.
