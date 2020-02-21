@@ -9,11 +9,16 @@ and optogenetics during 2-photon imaging.</h4>
 This project is licensed under the [GNU General Public License v3.0](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/LICENSE)<br>
 The hardware is licensed under the [CERN OHL v1.2](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/PCB/LICENSE)
 
+<br>
+
 ***
 
 <h4 align="justify"> Two-photon (2P) microscopy is a cornerstone technique in neuroscience research, but combining this technology with spectrally arbitrary light stimulation can be challenging due to crosstalk between stimulation light and fluorescence detection. To overcome this limitation, we present a simple and low-cost electronic solution based on an ESP32 microcontroller and a TLC5947 LED driver to rapidly time-interleave stimulation and detection epochs during scans. Implemented for less than $100, our design can independently drive up to 24 arbitrary spectrum LEDs to meet user requirements. We demonstrate the utility of our stimulator for colour vision experiments on the in vivo tetrachromatic zebrafish retina and for optogenetic circuit mapping in Drosophila.</h4></p>
 
 ***
+
+<br>
+
 - [An open and versatile LED controler](#Introduction)
 - [A £100 DIY efficient stimulator](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Bills%20of%20Materials/BOM%20-%20Stimulator.ods)
 - [A stimulator for visual neuroscience](#Colour-Vision-Experiment)
@@ -26,14 +31,14 @@ The hardware is licensed under the [CERN OHL v1.2](https://github.com/BadenLab/T
 
 ## Introduction
 
-Combining 2P imaging with additional light stimulation – for example for visual stimulation or for driving optogenetic actuators – has remained challenging because the stimulation light can interfere with fluorescence detection. This can result in light artefacts in the image and/or may damage sensitive fluorescence detection equipment (e.g. photomultiplier tubes, PMTs).
+<p align="justify"> Combining 2P imaging with additional light stimulation – for example for visual stimulation or for driving optogenetic actuators – has remained challenging because the stimulation light can interfere with fluorescence detection. This can result in light artefacts in the image and/or may damage sensitive fluorescence detection equipment (e.g. photomultiplier tubes, PMTs).
 
 A temporal separation between light stimulation and fluorescence detection, for example during the scan-retrace, can ameliorate these problems.
 This problem can be readily solved electronically, for example through use of a microcontroller.
 
 Here, we present such a solution. Our system can line-synch up to 24 independent LED channels, and can be assembled from off-the-shelf components for substantially below $100. This provides for flexible options of spectrally diverse light stimulation during 2-photon scanning and comfortably provides sufficient power to drive standard optogenetics actuators such as CsChrimson.
 
-Alongside, we also provided a custom 3D-printed casing, designed suggestions for optically combining LED banks using Thorlabs parts, and an alternative 3D-printed LED holder and microscope chamber. For software control, we provided custom Arduino scripts to flexibly programme stimulation protocols.
+Alongside, we also provided a custom 3D-printed casing, designed suggestions for optically combining LED banks using Thorlabs parts, and an alternative 3D-printed LED holder and microscope chamber. For software control, we provided custom Arduino scripts to flexibly programme stimulation protocols.</p>
 
 <img align="center" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Fig1.png">
 
