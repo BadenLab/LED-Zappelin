@@ -9,15 +9,11 @@ and optogenetics during 2-photon imaging.</h4>
 This project is licensed under the [GNU General Public License v3.0](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/LICENSE)<br>
 The hardware is licensed under the [CERN OHL v1.2](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/PCB/LICENSE)
 
-<br>
-
 ***
 
 <h4 align="justify"> Two-photon (2P) microscopy is a cornerstone technique in neuroscience research, but combining this technology with spectrally arbitrary light stimulation can be challenging due to crosstalk between stimulation light and fluorescence detection. To overcome this limitation, we present a simple and low-cost electronic solution based on an ESP32 microcontroller and a TLC5947 LED driver to rapidly time-interleave stimulation and detection epochs during scans. Implemented for less than $100, our design can independently drive up to 24 arbitrary spectrum LEDs to meet user requirements. We demonstrate the utility of our stimulator for colour vision experiments on the in vivo tetrachromatic zebrafish retina and for optogenetic circuit mapping in Drosophila.</h4></p>
 
 ***
-
-<br>
 
 - [An open and versatile LED controler](#Introduction)
 - [A £100 DIY efficient stimulator](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Bills%20of%20Materials/BOM%20-%20Stimulator.ods)
@@ -42,7 +38,7 @@ This problem can be readily solved electronically, for example through use of a 
 
 <img align="center" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Fig1.png">
 
-a) A fully assembled stimulator. b) Rendering of the custom-printed circuit board which accommodates the microcontroller, the LED driver and up to 24 LED channels. c) Schematics illustrating the circuit that controls the LED output. The blanking input can be inverted by a switch before reaching the output enable pin on the LED driver (electronically switching off the LEDs) and sending the signal to the micro-controller. A second switch control the blanking signal voltage as it needs to be adapted depending on the logic of the microcontroller used (3.3V for ESP32, 5V for Arduino). The microcontroller controls the LED driver through an SPI connection and send trigger signal output to an external. d) Illustration of the raster scan method described. The “blanking signal” is synchronous with the scanning logic, enabling the LEDs during the scanning mirrors retrace (black) and shutting them off during the acquisition (red), therefore providing temporal separation between stimulation and detection (Modified from [Euler et al. 2019](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/References/Euler%202019%20-%20Studying%20a%20Light%20Sensor%20with%20Light,%20Multiphoton%20Imaging%20in%20the%20Retina.pdf)).
+<h5 align="justify">a) A fully assembled stimulator. b) Rendering of the custom-printed circuit board which accommodates the microcontroller, the LED driver and up to 24 LED channels. c) Schematics illustrating the circuit that controls the LED output. The blanking input can be inverted by a switch before reaching the output enable pin on the LED driver (electronically switching off the LEDs) and sending the signal to the micro-controller. A second switch control the blanking signal voltage as it needs to be adapted depending on the logic of the microcontroller used (3.3V for ESP32, 5V for Arduino). The microcontroller controls the LED driver through an SPI connection and send trigger signal output to an external. d) Illustration of the raster scan method described. The “blanking signal” is synchronous with the scanning logic, enabling the LEDs during the scanning mirrors retrace (black) and shutting them off during the acquisition (red), therefore providing temporal separation between stimulation and detection (Modified from [Euler et al. 2019](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/References/Euler%202019%20-%20Studying%20a%20Light%20Sensor%20with%20Light,%20Multiphoton%20Imaging%20in%20the%20Retina.pdf)).</p>
 
 ***
 
