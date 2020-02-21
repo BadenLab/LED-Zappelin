@@ -33,12 +33,12 @@ The hardware is licensed under the [CERN OHL v1.2](https://github.com/BadenLab/T
 
 <p align="justify"> Combining 2P imaging with additional light stimulation – for example for visual stimulation or for driving optogenetic actuators – has remained challenging because the stimulation light can interfere with fluorescence detection. This can result in light artefacts in the image and/or may damage sensitive fluorescence detection equipment (e.g. photomultiplier tubes, PMTs).
 
-A temporal separation between light stimulation and fluorescence detection, for example during the scan-retrace, can ameliorate these problems.
+<p align="justify">A temporal separation between light stimulation and fluorescence detection, for example during the scan-retrace, can ameliorate these problems.
 This problem can be readily solved electronically, for example through use of a microcontroller.
 
-Here, we present such a solution. Our system can line-synch up to 24 independent LED channels, and can be assembled from off-the-shelf components for substantially below $100. This provides for flexible options of spectrally diverse light stimulation during 2-photon scanning and comfortably provides sufficient power to drive standard optogenetics actuators such as CsChrimson.
+<p align="justify">Here, we present such a solution. Our system can line-synch up to 24 independent LED channels, and can be assembled from off-the-shelf components for substantially below $100. This provides for flexible options of spectrally diverse light stimulation during 2-photon scanning and comfortably provides sufficient power to drive standard optogenetics actuators such as CsChrimson.
 
-Alongside, we also provided a custom 3D-printed casing, designed suggestions for optically combining LED banks using Thorlabs parts, and an alternative 3D-printed LED holder and microscope chamber. For software control, we provided custom Arduino scripts to flexibly programme stimulation protocols.</p>
+<p align="justify">Alongside, we also provided a custom 3D-printed casing, designed suggestions for optically combining LED banks using Thorlabs parts, and an alternative 3D-printed LED holder and microscope chamber. For software control, we provided custom Arduino scripts to flexibly programme stimulation protocols.</p>
 
 <img align="center" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Fig1.png">
 
