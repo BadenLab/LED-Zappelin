@@ -20,6 +20,7 @@ The device consists of a custom-designed PCB, an [ESP32 development board](https
 - [Programming the Stimulator](#Programming-the-ESP32)
 - [Operating the Stimulator](#Operating-the-Stimulator)
 - [Calibrating the Stimulator](#Calibrating-the-Stimulator)
+- [Calibration Script](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Stimulator_Calibration.ipynb)
 
 ***
 
@@ -242,7 +243,7 @@ For the calibration, we suggest setting the max_LED# value to 4095 (full power) 
 
 As the LED output is linear relative to the values entered here (Fig. 3), any max_LED# value will be proportional to the LED power set up for the 4095 value. The LED value (0-100%) entered in the stimulus sequence is linearly mapped to 0-max_LED#.
 
-
+We also provide a calibration script in the form of an [iPyhton jupyter notebook](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Stimulator_Calibration.ipynb). This script was designed to calibarte a 4 LEDs system for experiment on the zebrafish retina.
 
 ### Visual Stimulator Calibration
 
