@@ -262,7 +262,7 @@ In this script, one has to first modify the global parameters:
   - Number of LEDs to be considered
   - Figure parameters: Figure sizes, spectra range to considered, etc.
 
-<img align="left" width="650" height="325" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Filtered%20Spectrometer%20Recordings.png">
+<img align="left" width="650" height="325" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Calibration_Figures/Filtered%20Spectrometer%20Recordings.png">
 
 .
 
