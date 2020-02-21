@@ -1,6 +1,6 @@
 ﻿<p align="right"><img src="https://github.com/BadenLab/Zebrafish-visual-space-model/blob/master/Images/Logo.png" width="300"/>
 <h1 align="center">Instruction Manual</h1></p>
-<h1 align="center">Multi-Chromatic Stimulator</h1>
+<h1 align="center">Open Light-Stimulator</h1>
 
 ***
 
