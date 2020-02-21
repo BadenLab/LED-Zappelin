@@ -281,13 +281,13 @@ At this stage, one might retake measurements with the spectrometer with this new
 
 <p align="justify">To establish the LEDs performance we then plotted their normalised intensities (LED relative brightness) against the PWM (*array_LED#*) used in the Arduino code to drive them. A Linear fit along with the Sum of Square Error (SSE), demonstrates that the TLC5947 LED driver controls the LED in an optimal linear manner.</p>
 
-<img align="center" width="800" height="200" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Normalised%20Intensity%20VS%20Forward%20Current.png">
+<img align="center" width="800" height="200" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Calibration_Figures/Normalised%20Intensity%20VS%20Forward%20Current.png">
 
 ***
 
 We then used the absorbance spectrum fitting template for visual pigment defined by [Govardoskii et al, 2000 - In Search of Visual Pigment Template](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/References/Govardovskii%202000%20-%20In%20search%20of%20the%20visual%20pigment%20template.pdf). Using the Opsin maximal absorbance defined earlier, this nomogram template describes the predicted shape of the absorbance spectra of all visual pigment. Here we obtained the following specra for the zebrafish cone photoreceptors that we plotted along the human visible spectrum as comparison.
 
-<img align="center" width="900" height="600" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Cone%20Absoprtion%20Spectra.png">
+<img align="center" width="900" height="600" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Calibration_Figures/Cone%20Absoprtion%20Spectra.png">
 
 ***
 
@@ -295,17 +295,13 @@ We then used the absorbance spectrum fitting template for visual pigment defined
 
 <p align="justify">Then, we plotted the LED spectra along the cone opsin absorbance, and each LED’s spectral cross-section with respective target conein solid colours. Grey boxes indicate the positions of the two PMT detector bands. The Red-LED’s long-wavelength emission spectrum was chosen to limit spectral overlap with the red-fluorescence detection channel. Any loss in excitation efficiency of the red opsin was compensated for by increasing this LED’s power accordingly. </p>
 
-<img align="center" width="900" height="600" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Opsin-LED%20Spectra.png">
+<img align="center" width="900" height="600" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Calibration_Figures/Opsin-LED%20Spectra.png">
 
 
 ***
 
 With the previous spectra, we estimate the relative co-excitation of photoreceptors by the LEDs:
-<img align="center" width="900" height="600" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/LED-Opsin%20Co-Excitation.png">
-<img align="center" width="900" height="600" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Opsin-LED%20Co-Excitation.png">
-
-***
-
-This project is licensed under the [GNU General Public License v3.0](https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/LICENSE)
+<img align="center" width="900" height="600" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Calibration_Figures/LED-Opsin%20Co-Excitation.png">
+<img align="center" width="900" height="600" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20CalibrationCalibration_Figures//Opsin-LED%20Co-Excitation.png">
 
 ***
