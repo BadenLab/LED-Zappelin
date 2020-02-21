@@ -4,6 +4,7 @@
 and optogenetics during 2-photon imaging.</h4>
 <p align="center"><h6 align="right">by M.J.Y. Zimmermann, A.M. Chagas, P. Bartel, S. Pop, L.L. Prieto Godino & T. Baden</h6></p>
 
+<br>
 
 This project is licensed under the [GNU General Public License v3.0](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/LICENSE)<br>
 The hardware is licensed under the [CERN OHL v1.2](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/PCB/LICENSE)
