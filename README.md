@@ -1,6 +1,7 @@
 <p align="right"><img src="https://github.com/BadenLab/Zebrafish-visual-space-model/blob/master/Images/Logo.png" width="300"/>
 <h1 align="center">Open Light-Stimulator</h1></p>
-<h4 align="center">An open source and versatile LED controller for arbitrary spectrum visual stimulation and optogenetics during 2-photon imaging.</h4>
+<h4 align="center">An open source and versatile LED controller for arbitrary spectrum visual stimulation
+and optogenetics during 2-photon imaging.</h4>
 <p align="center"><h6 align="right">by M.J.Y. Zimmermann, A.M. Chagas, P. Bartel, S. Pop, L.L. Prieto Godino & T. Baden</h6></p>
 
 
