@@ -9,9 +9,9 @@
 
 <p align="justify">This document contains detailed assembly instructions, a software guideline to customize stimuli, and includes a parts list.</p>
 
- <p align="justify">The Arduino code and 3D printing files (SCAD and STL) can be downloaded [here](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/3D%20Designs), and further modified to fit customise purposes. The aim of this device is to finely control LEDs used in combination with a 2-photon microscope. </p>
+ The Arduino code and 3D printing files (SCAD and STL) can be downloaded [here](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/3D%20Designs), and further modified to fit customise purposes. The aim of this device is to finely control LEDs used in combination with a 2-photon microscope.
 
-<p align="justify">The device consists of a custom-designed PCB, an [ESP32 development board](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather) (or an Arduino Nano if the stimulator does not need to be combined with a 2 photon microscope), a [LED driver](https://learn.adafruit.com/tlc5947-tlc59711-pwm-led-driver-breakout/overview) and various off-the-shelf components. </p>
+The device consists of a custom-designed PCB, an [ESP32 development board](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather) (or an Arduino Nano if the stimulator does not need to be combined with a 2 photon microscope), a [LED driver](https://learn.adafruit.com/tlc5947-tlc59711-pwm-led-driver-breakout/overview) and various off-the-shelf components.
 
 ***
 
@@ -41,15 +41,15 @@ Schematics and PCB footprint can be downloaded and modified from the same reposi
 <p align="center"><h4 align="left">2 – Soldering the custom-designed PCB</h4></p>
 <img align="left" width="375" height="225" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Board.png">
 
-The board is self-explanatory. On the left, two options are available, one for the Arduino (close rows) the other for the ESP (spread rows). There is no need to solder more JST pins that the number of LED required for the desired stimulator.
+<p align="justify">The board is self-explanatory. On the left, two options are available, one for the Arduino (close rows) the other for the ESP (spread rows). There is no need to solder more JST pins that the number of LED required for the desired stimulator.
 
-The jumper on the top (Signal Inverter) allows the inversion of the TTL "Blanking" signals. For ScanImage users, the jumper should be placed at the upper position.
+<p align="justify">The jumper on the top (Signal Inverter) allows the inversion of the TTL "Blanking" signals. For ScanImage users, the jumper should be placed at the upper position.
 
-The jumper at the bottom of the board (Voltage Divider) allows to tune down the voltage from 5 to 3.3V if the ESP is used instead of an Arduino. ESP32 unlike Arduino Nano, works on a 3.3V logic; no higher tension should be sent to this board. Since most TTL deliver 5V pulses, we selected a 220/470Ω divider to bring a 5V blanking signal into a 3.3V input. Depending on the blanking signal generator used, this divider can be modified to fit one’s personal design or bypassed by only bridging the 220Ω resistor.
+<p align="justify">The jumper at the bottom of the board (Voltage Divider) allows to tune down the voltage from 5 to 3.3V if the ESP is used instead of an Arduino. ESP32 unlike Arduino Nano, works on a 3.3V logic; no higher tension should be sent to this board. Since most TTL deliver 5V pulses, we selected a 220/470Ω divider to bring a 5V blanking signal into a 3.3V input. Depending on the blanking signal generator used, this divider can be modified to fit one’s personal design or bypassed by only bridging the 220Ω resistor.
 
 <img align="right" width="500" height="200" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/reference%20resistor%20vs%20output%20current.png">
 
-The Adafruit TLC5947 LED driver is a constant current driver configured by default to set the current level at 15mA per channel, which is virtually safe for any LED. However, one can operate at different current by replacing the on-board reference resistor with a through hole resistor. The driver is capable to deliver up to 30mA, the graph below shows the relationship between resistance and output current.
+<p align="justify">The Adafruit TLC5947 LED driver is a constant current driver configured by default to set the current level at 15mA per channel, which is virtually safe for any LED. However, one can operate at different current by replacing the on-board reference resistor with a through hole resistor. The driver is capable to deliver up to 30mA, the graph below shows the relationship between resistance and output current. </p>
 
 
 
@@ -60,8 +60,8 @@ The Adafruit TLC5947 LED driver is a constant current driver configured by defau
 
 In order to finely adjust each LED power, we added multiple-turn trimmer potentiometers to our design. A simple solution is to manufacture the appropriate PCB board (We provide multiple options on the [GitHub repository](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/PCB/Potentiometer%20Mounts)).
 
-Otherwise, one can make its own little PCB by using a solderable board.
-Each potentiometer connects its ClockWise (pin 3) to the LED (+) stimulator JST pin; and its Base (pin 2) to the LED (+) leg. The LED (-) stimulator JST pin connects the LED (-) leg directly.
+<p align="justify">Otherwise, one can make its own little PCB by using a solderable board.
+Each potentiometer connects its ClockWise (pin 3) to the LED (+) stimulator JST pin; and its Base (pin 2) to the LED (+) leg. The LED (-) stimulator JST pin connects the LED (-) leg directly.</p>
 
 ***
 
@@ -75,40 +75,41 @@ We used [OpenSCAD](www.openscad.com) to design the stimulator box. The tolerance
 
 <img src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Fig5.png">
 
-a) Rendering of the stimulator box 3D files set here by default for 4 LED channels and 4 proxy LEDs. b) Rendering of the fully mounted stimulator with all PCBs and components tightly fitting their respective space.
+<h5 align="justify">a) Rendering of the stimulator box 3D files set here by default for 4 LED channels and 4 proxy LEDs. b) Rendering of the fully mounted stimulator with all PCBs and components tightly fitting their respective space. </h5>
 
-The PCB is screwed to the “Bottom” part of the box by using M3 screws and nuts. The potentiometer board adjusts itself with the “Back” part of the box, and the trimmers should adapt to their respective holes exactly.
-All part should fit tightly together and are maintained together by 4 M3*50mm socket screws.
+<p align="justify">The PCB is screwed to the “Bottom” part of the box by using M3 screws and nuts. The potentiometer board adjusts itself with the “Back” part of the box, and the trimmers should adapt to their respective holes exactly.
+All part should fit tightly together and are maintained together by 4 M3*50mm socket screws. </p>
 
 
 ***
 
 <p align="center"><h4 align="left">5 – Adjusting the proxy LED</h4></p>
-The proxy LED are markers for the experimenter to have a ready visualisation of the stimulus being displayed under the objective. If this option is selected, 3mm LEDs are to be mounted at the back of the LED holder using 3mm LED mounts.
+<p align="justify">The proxy LED are markers for the experimenter to have a ready visualisation of the stimulus being displayed under the objective. If this option is selected, 3mm LEDs are to be mounted at the back of the LED holder using 3mm LED mounts.
 
-Finally, any translucid material could be placed in the LED holder slot in order to diffuse the proxy LED light (In our example, we used a piece of thin Teflon)
+<p align="justify">Finally, any translucid material could be placed in the LED holder slot in order to diffuse the proxy LED light (In our example, we used a piece of thin Teflon)</p>
 
 ***
 
 <p align="center"><h4 align="left">6 – Mounting the stimulating LEDs</h4></p>
-Each stimulating LED must be connected to its respective channel, taking note of their polarity (long LED leg should be connected to the positive pin).
+<p align="justify">Each stimulating LED must be connected to its respective channel, taking note of their polarity (long LED leg should be connected to the positive pin).
 
-For our visual stimulation setup, we combined all LED light sources into one beam which is projected through the objective to our model retina. We therefore constructed an optical cage system using a mixture of Thorlabs parts and 3D-printed objects to hold all filters and dichroic mirrors.
+<p align="justify">For our visual stimulation setup, we combined all LED light sources into one beam which is projected through the objective to our model retina. We therefore constructed an optical cage system using a mixture of Thorlabs parts and 3D-printed objects to hold all filters and dichroic mirrors.
 
-For the optogenetics experiment we 3D-designed arenas where the sample sits, surrounded by  four LEDs.
+<p align="justify">For the optogenetics experiment we 3D-designed arenas where the sample sits, surrounded by  four LEDs. </p>
 
 <img src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Fig6.png">
-a) SCAD files for adapting 3mm LEDs and dichroic mirrors to standard 30mm optomechanical system. b) Rendering of the LED illumination system for the visual experiment. c) For optogenetics experiment, we designed a mounting platform that holds four 3mm LEDs and can fit a RC-40HP chamber (SmartEphys, Warner Instrument).  d) Same as c) but designed to fit a small petri dish (ø 35mm) lid.
+<h5 align="justify">a) SCAD files for adapting 3mm LEDs and dichroic mirrors to standard 30mm optomechanical system. b) Rendering of the LED illumination system for the visual experiment. c) For optogenetics experiment, we designed a mounting platform that holds four 3mm LEDs and can fit a RC-40HP chamber (SmartEphys, Warner Instrument).  d) Same as c) but designed to fit a small petri dish (ø 35mm) lid. </h5>
 
 ***
 
 <p align="center"><h4 align="left">7 – Connecting the stimulator to LEDs, the microscope’s DAQ and a computer</h4></p>
-The stimulator can be externally powered anywhere between 5-30V via the power port. Since the TLC5947 is constant current LED driver, the voltage selection is not critical, however it should be slightly higher than the LED forward voltage (cf. LED driver datasheet). If desired, multiple LEDs can be connected to the same channel, however in this case the voltage supply must be adjusted accordingly (cf. LED driver datasheet).
+<p align="justify">The stimulator can be externally powered anywhere between 5-30V via the power port. Since the TLC5947 is constant current LED driver, the voltage selection is not critical, however it should be slightly higher than the LED forward voltage (cf. LED driver datasheet). If desired, multiple LEDs can be connected to the same channel, however in this case the voltage supply must be adjusted accordingly (cf. LED driver datasheet).
 
-For the standard line-synched stimulator version with an ESP32, a line-synched 5V TTL blanking signal BNC must be fed into the stimulator from the microscope’s DAQ (if the TTL is different from 5V, this can still be accepted provided the associated resistor is changed accordingly – see soldering paragraph). Note: Since for the default ESP32 version the blanking signal is used as the external clock, the stimulator will not execute any stimuli without it. If such line-synching is not required, consult the “simple” non-synchronised version using the Arduino Nano.
+<p align="justify">For the standard line-synched stimulator version with an ESP32, a line-synched 5V TTL blanking signal BNC must be fed into the stimulator from the microscope’s DAQ (if the TTL is different from 5V, this can still be accepted provided the associated resistor is changed accordingly – see soldering paragraph). Note: Since for the default ESP32 version the blanking signal is used as the external clock, the stimulator will not execute any stimuli without it. If such line-synching is not required, consult the “simple” non-synchronised version using the Arduino Nano.
 
-If required, connect the output trigger channel to the microscope’s DAQ. This signal generated by the stimulator by default sends a 3.3V pulse (if ESP32 is used, 5V for Arduino Nano) once at the start of the stimulus and then again every 1,000 ms (1 Hz exactly). The trigger signal can for example be used to time-align acquired imaging data with the stimulus in postprocessing.
-Finally, the board is connected to a computer via USB (micro USB for ESP32, mini USB for Arduino Nano).
+<p align="justify">If required, connect the output trigger channel to the microscope’s DAQ. This signal generated by the stimulator by default sends a 3.3V pulse (if ESP32 is used, 5V for Arduino Nano) once at the start of the stimulus and then again every 1,000 ms (1 Hz exactly). The trigger signal can for example be used to time-align acquired imaging data with the stimulus in postprocessing.
+
+<p align="justify">Finally, the board is connected to a computer via USB (micro USB for ESP32, mini USB for Arduino Nano). </p>
 
 <img align="center" src="https://github.com/MaxZimmer/Multi-Chromatic-Stimulator/blob/master/Images/Schematics.png" width="1000"/>
 
@@ -128,7 +129,7 @@ Follow the installation instructions from the [Espressif repository](https://git
 4-	Close Arduino and open the Multi-Chromatic-Stimulator arduino file from the [Arduino Code folder](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/Arduino%20code/2-Photon_Mutli_Chromatic_Stimulator).
 
 
-5-	From the “Tools” tab: Select from “Boards” the “Adafruit ESP32 Feather”.	From “Upload Speed”, select 921600.	From “Flash Frequency”, select 80Hz. From “Port”, select the computer port to which the ESP is connected (if doubt, unplug, replug and observe the choices differences). If the ESP is not recognised, check the driver installation (2), then check the micro USB cable.
+<p align="justify">5-	From the “Tools” tab: Select from “Boards” the “Adafruit ESP32 Feather”.	From “Upload Speed”, select 921600.	From “Flash Frequency”, select 80Hz. From “Port”, select the computer port to which the ESP is connected (if doubt, unplug, replug and observe the choices differences). If the ESP is not recognised, check the driver installation (2), then check the micro USB cable. </p>
 
 6-	Compile and Upload the code by clicking on the arrow button on the top left.
 
@@ -141,17 +142,17 @@ Follow the installation instructions from the [Espressif repository](https://git
 
   Stimulus Parameters
 
-The code is designed to iteratively loop a pre-programmed stimulus sequence after an initial one-off optional preadaptation period
+<p align="justify">The code is designed to iteratively loop a pre-programmed stimulus sequence after an initial one-off optional preadaptation period
 
-- The number of loops is determined by *nLoops*. The stimulus will stop after finishing the nth  loop.
+<p align="justify">- The number of loops is determined by *nLoops*. The stimulus will stop after finishing the nth  loop.
 
-–	IMPORTANT,  the number of entries within the arrays must be the same and manually entered in *nArrayEntries* (including the pre-adaptation at position 1, see below).
+<p align="justify">–	IMPORTANT,  the number of entries within the arrays must be the same and manually entered in *nArrayEntries* (including the pre-adaptation at position 1, see below).
 
-–	The *Scan_Logic* parameter corresponds to the x-mirror scan rate in ms (i.e. = 1.0 if line speed is 1 ms per line). This value must be changed if a different scan logic is used. This value defines the tempo of the entire stimulus (Each time a blanking signal is counted, the code advances by an internal time-counter of Scan_Logic in milliseconds.)
+<p align="justify">–	The *Scan_Logic* parameter corresponds to the x-mirror scan rate in ms (i.e. = 1.0 if line speed is 1 ms per line). This value must be changed if a different scan logic is used. This value defines the tempo of the entire stimulus (Each time a blanking signal is counted, the code advances by an internal time-counter of Scan_Logic in milliseconds.)
 
-–	The *array_LED#* arrays correspond to the stimulus sequence for each LED number. Here the number of arrays must be adjusted to the number of stimulating LEDs. All array positions will be read in synchrony, based on the timing array detailed below. IMPORTANT: The first entry is not part of the to-be-looped stimulus sequence, but instead defines the LED’s brightness for the preadaptation period. Note also that the first trigger output will start with the second entry (= the first entry of the stimulation sequence). The value entered at each position is the light intensity where 0 corresponds to no light and 100 to maximal light intensity. The value entered must range between 0 and 100.
+<p align="justify">–	The *array_LED#* arrays correspond to the stimulus sequence for each LED number. Here the number of arrays must be adjusted to the number of stimulating LEDs. All array positions will be read in synchrony, based on the timing array detailed below. IMPORTANT: The first entry is not part of the to-be-looped stimulus sequence, but instead defines the LED’s brightness for the preadaptation period. Note also that the first trigger output will start with the second entry (= the first entry of the stimulation sequence). The value entered at each position is the light intensity where 0 corresponds to no light and 100 to maximal light intensity. The value entered must range between 0 and 100.
 
-–	The *array_Time* array corresponds to the duration of each entry in ms; the first entry being the pre-adaptation that will only be played at the start of the stimulus, the sequence will then loop starting at the second position.
+<p align="justify">–	The *array_Time* array corresponds to the duration of each entry in ms; the first entry being the pre-adaptation that will only be played at the start of the stimulus, the sequence will then loop starting at the second position. </p>
 
 <img src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Arduino%20Code.png">
 
