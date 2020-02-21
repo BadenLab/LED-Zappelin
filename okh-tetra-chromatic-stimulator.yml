@@ -65,7 +65,7 @@ contributors:                              # recommended
     affiliation: University of Sussex                   # text
     email: a.maia-chagas@sussex.ac.uk                         # email address
 
-image: https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Fig1.png                             # recommended | absolute or relative path
+image: https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Presentation.png                             # recommended | absolute or relative path
 
 version: 2.2                           # text
 
