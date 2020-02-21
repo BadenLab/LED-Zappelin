@@ -124,9 +124,11 @@ We presented full field illumination steps of 615 nm light lasting 0.5 s and an 
 ├───Instruction Manual                        Detailed manual to assemble and calibrate the stimulator
 |   └───Stimulator Calibration                - Contains calibration recordings and the adaptable jupyter notebook script to calibrate the stimulator
 |       ├───Arduino Calibration Code          - Sequence used for the calibration
+|       ├───Calibration Figures               - Illustration from calibration measurements
 |       ├───Filters                           - Filters and dicroic mirrors spectra
 |       ├───Powermeter Recording              - Recording of the calibration sequence
-|       └───Spectrometer Recording            - Recording of the calibration sequence
+|       ├───Spectrometer Recording            - Recording of the calibration sequence
+|       └───Stimulator Calibration            - iPython Jupyter Notebook script for calibration
 |
 ├───PCB                                       KiCad and Gerber files to modified and generate PCB for:
 │   ├───Potentiometer mounts                  - ...trimmer potentiometers that set the LED maximum brightness
