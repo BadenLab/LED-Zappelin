@@ -302,6 +302,6 @@ We then used the absorbance spectrum fitting template for visual pigment defined
 
 With the previous spectra, we estimate the relative co-excitation of photoreceptors by the LEDs:
 <img align="center" width="900" height="600" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Calibration_Figures/LED-Opsin%20Co-Excitation.png">
-<img align="center" width="900" height="600" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20CalibrationCalibration_Figures//Opsin-LED%20Co-Excitation.png">
+<img align="center" width="900" height="600" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Calibration_Figures//Opsin-LED%20Co-Excitation.png">
 
 ***
