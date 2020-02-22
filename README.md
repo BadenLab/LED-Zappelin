@@ -18,7 +18,7 @@ The hardware is licensed under the [CERN OHL v1.2](https://github.com/BadenLab/T
 - [An open and versatile LED controler](#Introduction)
 - [A £100 DIY efficient stimulator](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Bills%20of%20Materials/BOM%20-%20Stimulator.ods)
 - [A stimulator for visual neuroscience](#Colour-Vision-Experiment)
-- [A Stimulator for optogenetics](#Optogenetics-Experiment)
+- [A stimulator for optogenetics](#Optogenetics-Experiment)
 - [A detailed assembly and instruction manual](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/README.md)
 - [A step by step calibration script](https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Instruction%20Manual/Stimulator%20Calibration/Stimulator_Calibration.ipynb)
 - [Repository Structure](#Repository-Structure)
@@ -74,6 +74,7 @@ Following [established protocols](https://github.com/BadenLab/Tetra-Chromatic-St
 We presented full field steps of red, green, blue and UV light to the fish eye (respectively 567, 480, 420 and 365nm), and recorded evoked calcium signals as a readout of synaptic activity. We observed spectrally different tunings from distinct bipolar cell terminals  without detectable stimulus artefact across the scan.
 
 <img align="center" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Fig8.png">
+<h5 align="justify"> a) Overview of the setup described for the visual stimulation experiment performed on the tetrachromatic zebrafish. b) Drawing of the larval zebrafish retina highlighting the IPL. c) 2 photon scan field of the IPL with regions-of-interest marked by red circles. The 64x32 pixel image was obtained by at 1ms scan rate. d) Ca²⁺ traces (mean traces in black, n=5 trials in grey) in response to consecutive red, green, blue and UV On/Off flashes. e) Trigger timing recorded by the DAQ highlighting its accuracy over time with a precision of 0.1µs. t(n+1) = t(n) + T, where “t” is the recorded trigger time and “T” the trigger period. </5>
 
 ***
 
@@ -90,6 +91,7 @@ We presented full field illumination steps of 615 nm light lasting 0.5 s and an 
 <p align="justify">We observed robust stimulus-evoked activity in the primary olfactory sensory centres of the larval brain, the antennal lobes (red outlines). Similarly to colour vision experiments, we detected no light artefact. </p>
 
 <img align="center" src="https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Fig9.png">
+<h5 align="justify">  a) Schematic of a fruit fly first instar larval head expressing the red-shifted channel rhodopsin CsChrimson in olfactory sensory neurons and GCaMP6s in all neurons. b) Rendering of the experimental setup: The mounting chamber is placed in a 3D-printed holder, screwed onto a rigid stand (ThorLabs).  c),d)  2 photon scan field of the larval brain with antennal lobes marked by red circles (left) and Ca²⁺ traces in response to red flashes (right). c. Stimulation duration = 0.5 s, inter-stimulus interval = 3 s, image dimensions = 256 x 230, scan rate = 1081 Hz, frame rate = 4.7 Hz. d) Stimulation duration = 0.5 s, inter-stimulus interval = 10 s, image dimensions = 256 x 170, scan rate = 1077Hz, frame rate = 6.34 Hz. </h5>
 
 
 
