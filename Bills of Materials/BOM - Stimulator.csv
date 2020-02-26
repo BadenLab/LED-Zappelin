@@ -1,0 +1,32 @@
+Name,Manufacturer,Order ID,Retailer,Quantity,Observation 1 ,Observation 2 ,Suggested URL,Cost
+,,,,,,,,
+Adafruit Huzzah32 - ESP32 Feather,Adafruit,3405,Adafruit,1,Development Board,Easier to order it with header pins soldered,https://www.adafruit.com/product/3405,£17
+Adafruit TLC5947,Adafruit,1429,Adafruit,1,LED Driver,,https://www.adafruit.com/product/1429,£12
+,,,,,,,,
+BNC coaxial connectors,TE Connectivity,1-1337542-0,Farnell,2,Electronics,"Right angle jacks, 50ohm",https://uk.farnell.com/greenpar-te-connectivity/1-1337542-0/rf-coaxial-bnc-right-angle-jack/dp/1020954?st=bnc%20pcb%20mout,£3.70
+2 way JST Female Connector Housing,RS Online,820-1611,JST,8,Electronics,,https://uk.rs-online.com/web/p/pcb-connector-housings/8201611/,£3.80
+3 way JST Female Connector Housing,RS Online,820-1614,JST,1,Electronics,,https://uk.rs-online.com/web/p/pcb-connector-housings/8201614/,£1.90
+4 way JST Female Connector Housing,RS Online,820-1618,JST,2,Electronics,,https://uk.rs-online.com/web/p/pcb-connector-housings/8201618/,£1.90
+2 way JST PCB header,RS Online,820-1554,JST,8,Electronics,,https://uk.rs-online.com/web/p/pcb-headers/8201554/,£3.80
+3 way JST PCB header,RS Online,820-1557,JST,1,Electronics,,https://uk.rs-online.com/web/p/pcb-headers/8201557/,£1.90
+4 way JST PCB header,RS Online,820-1551,JST,2,Electronics,,https://uk.rs-online.com/web/p/pcb-headers/8201551/,£1.90
+JST Crimp Connector Wire,RS Online,01SHXSXH-26L 150 ,RS,15,Electronics,,https://uk.rs-online.com/web/p/products/8201548/,£10.00
+3 mm LED,Digikey,350-1557-ND,Digikey,4,Electronics,"3mm round, tht",https://www.digikey.com/product-detail/en/dialight/5219210F/350-1557-ND/808955,£2
+Mount for 3 mm LED,Digikey,67-1330-ND,Digikey,4,Electronics,3mm panel mount,https://www.digikey.com/products/en?keywords=67-1330-ND,£1
+Mount for 5 mm LED,Digikey,67-1332-ND,Digikey,4,Electronics,5mm panel mount,https://www.digikey.com/product-detail/en/lumex-opto-components-inc/SSH-LX5091/67-1332-ND/144810,£1
+Rocker LED switch,,,Ebay,1,Electronics,Round Switch / 3 pins,https://www.ebay.co.uk/p/Blue-On-off-Lighted-LED-Round-Rocker-Switch-Car-Dashboard-Dash-SPST-12v/1942302409?iid=262042885084&chn=ps,£2.50
+220 Ohms Resitor,RS Online,707-7612,RS,1,Electronics,Through hole,https://uk.rs-online.com/web/p/through-hole-fixed-resistors/7077612/,£1.16
+470 Ohms Resitor,RS Online,707-7647,RS,1,Electronics,Through hole,https://uk.rs-online.com/web/p/through-hole-fixed-resistors/7077647/,£1.16
+10 kOhms Trimmer Potentiometer,TT Electronics,89PR10KLF,Farnell,4,Electronics,Through Hole,https://uk.farnell.com/bi-technologies-tt-electronics/89pr10klf/trimmer-resistor/dp/1653213?st=trimmer%20potentiometer,£5.95
+PCB socket,Samtec,SSW-116-02-G-S ,RS,6,Electronics,"1 row, 15 pin",https://uk.rs-online.com/web/p/pcb-sockets/7655795/,£3
+2.1 mm right angle DC socket,RS Online,884-0957,RS,1,Electronics,2.1 mm right angle,https://uk.rs-online.com/web/p/dc-power-sockets/8840957/,£1
+Solderable Breadboard,Roth Elektronik,RE944-S1,RS,1,Electronics,42.54 x 31.75,https://uk.rs-online.com/web/p/breadboards/8971654/,£1.76
+distinc colour wires,RS Online,331-862,RS,100 cm,Electronics,20 AWG,https://uk.rs-online.com/web/p/hookup-equipment-wire/0331862/,£5
+Cable shrink,RS Online,170-6377,RS,20 cm,Electronics,Shrunk diameter 1.2 mm,https://uk.rs-online.com/web/p/heat-shrink-cold-shrink-sleeves/1706377/,£1.58
+,,,,,,,,
+M3 x 10mm screw,RS Online,660-4636,RS,4,Mechanical,M3 x 10 Hex socket cap,https://uk.rs-online.com/web/p/socket-screws/6604636/,£4
+M3 nut,RS Online,122-4400,RS,4,Mechanical,M3 nuts,https://uk.rs-online.com/web/p/hex-nuts/1224400/,£4
+M4 x 50mm Hex Socket Cap Screws,RS Online,304-4592,RS,4,Mechanical,M4 x 50,https://uk.rs-online.com/web/p/socket-screws/3044592/,£4
+M4 nut,RS Online,189-579,RS,4,Mechanical,M4 nuts,https://uk.rs-online.com/web/p/hex-nuts/0189579/,£4
+,,,,,,,,
+,,,,,,,,£101
