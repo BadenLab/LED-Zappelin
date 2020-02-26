@@ -68,7 +68,7 @@ contributors:                              # recommended
     affiliation: University of Sussex                   # text
     email: a.maia-chagas@sussex.ac.uk                         # email address
 
-image: https://github.com/BadenLab/LED-Zappelin/blob/master/Images/Presentation.png                             # recommended | absolute or relative path
+image: https://raw.githubusercontent.com/BadenLab/LED-Zappelin/master/Images/Presentation.png                             # recommended | absolute or relative path
 
 version: 2.2                           # text
 
