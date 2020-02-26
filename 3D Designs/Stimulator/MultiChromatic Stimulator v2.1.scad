@@ -1,17 +1,17 @@
 /* 
-
-                            Multi LED Stimulator v2.1.
+                            LED Zappelin’ v2.2.
                     
         An opensource LED stimulator for visual and optogenetics stimulation in combination with 2-photon recording
 
 
 
-This 3D file is designed for the Multi-Chromatic Stimulator project components and its customed PCB
-Source : https://github.com/BadenLab/Multi-Chromatic-Stmulator
+This 3D file is designed for the Light Stimulator project components and its customed PCB
+Source : https://github.com/BadenLab/LED Zappelin’
 This project is Open Source licensed, released under CERN OHL v1.2
 
 by M.J.Y. Zimmermann, 2018.12.11
-Baden Lab, CRPC, School of Life Sciences, University of Sussex, United Kingdom, www.badenlab.org 
+Baden Lab, CRPC, School
+ of Life Sciences, University of Sussex, United Kingdom, www.badenlab.org 
 
                                                                                      */
 
@@ -502,24 +502,24 @@ module Switch(){
 }
 
 module Labels(){
-    translate([-x_Box/2+2,y_Box/2-20,z_Box-Wall/2])linear_extrude(heigh=Wall/2)text("Multi-Chromatic Stimulator",size = 7.5);
-    translate([x_Box/2-17,y_Box/2-27.5,z_Box-Wall/2])linear_extrude(heigh=Wall/2)text("v2.1",size=5);
-    translate([-x_Box/2+10,y_Box/2-45,z_Box-Wall/2])linear_extrude(heigh=Wall/2)text("An open-source LED Stimulator",size=5.5);
+    translate([-x_Box/2+15,y_Box/2-20,z_Box-Wall/2])linear_extrude(height=Wall/2)text("LED Zappelin’",size = 12);
+    translate([x_Box/2-17,y_Box/2-27.5,z_Box-Wall/2])linear_extrude(height=Wall/2)text("v2.2",size=5);
+    translate([-x_Box/2+10,y_Box/2-45,z_Box-Wall/2])linear_extrude(height=Wall/2)text("An open-source LED Stimulator",size=5.5);
     
-    translate([-x_Box/2+Wall,32+Wall,z_Box/2+7])rotate([90,0,0])rotate([0,-90,0])linear_extrude(heigh=Wall/2)text("Blanking",size=4.5);
-    translate([-x_Box/2+Wall,29+Wall,z_Box/2])rotate([90,0,0])rotate([0,-90,0])linear_extrude(heigh=Wall/2)text("Signal",size=4.5);
+    translate([-x_Box/2+Wall,32+Wall,z_Box/2+7])rotate([90,0,0])rotate([0,-90,0])linear_extrude(height=Wall/2)text("Blanking",size=4.5);
+    translate([-x_Box/2+Wall,29+Wall,z_Box/2])rotate([90,0,0])rotate([0,-90,0])linear_extrude(height=Wall/2)text("Signal",size=4.5);
     
-    translate([-x_Box/2+Wall,-12+Wall,z_Box/2+7])rotate([90,0,0])rotate([0,-90,0])linear_extrude(heigh=Wall/2)text("Trigger",size=4.5);
-    translate([-x_Box/2+Wall,-10+Wall,z_Box/2])rotate([90,0,0])rotate([0,-90,0])linear_extrude(heigh=Wall/2)text("Channel",size=4.5);
+    translate([-x_Box/2+Wall,-12+Wall,z_Box/2+7])rotate([90,0,0])rotate([0,-90,0])linear_extrude(height=Wall/2)text("Trigger",size=4.5);
+    translate([-x_Box/2+Wall,-10+Wall,z_Box/2])rotate([90,0,0])rotate([0,-90,0])linear_extrude(height=Wall/2)text("Channel",size=4.5);
     
-    translate([x_Box/2+3*Wall,-12,z_Box/2+6])rotate([90,0,0])rotate([0,90,0])linear_extrude(heigh=Wall/2)text("Power in",size=5);
-    translate([x_Box/2+3*Wall,-9,z_Box/2-2])rotate([90,0,0])rotate([0,90,0])linear_extrude(heigh=Wall/2)text("5 - 30V",size=5);
+    translate([x_Box/2+3*Wall,-12,z_Box/2+6])rotate([90,0,0])rotate([0,90,0])linear_extrude(height=Wall/2)text("Power in",size=5);
+    translate([x_Box/2+3*Wall,-9,z_Box/2-2])rotate([90,0,0])rotate([0,90,0])linear_extrude(height=Wall/2)text("5 - 30V",size=5);
     
-    translate([62.5,y_Box/2+3*Wall,z_Box/2+15])rotate([90,0,180])linear_extrude(heigh=Wall/2)text("LED Channel",size=5);
-    translate([17,y_Box/2+3*Wall,z_Box/2+15])rotate([90,0,180])linear_extrude(heigh=Wall/2)text("1",size=5);
-    translate([7,y_Box/2+3*Wall,z_Box/2+15])rotate([90,0,180])linear_extrude(heigh=Wall/2)text("2",size=5);
-    translate([-3.25,y_Box/2+3*Wall,z_Box/2+15])rotate([90,0,180])linear_extrude(heigh=Wall/2)text("3",size=5);
-    translate([-13,y_Box/2+3*Wall,z_Box/2+15])rotate([90,0,180])linear_extrude(heigh=Wall/2)text("4",size=5);
+    translate([62.5,y_Box/2+3*Wall,z_Box/2+15])rotate([90,0,180])linear_extrude(height=Wall/2)text("LED Channel",size=5);
+    translate([17,y_Box/2+3*Wall,z_Box/2+15])rotate([90,0,180])linear_extrude(height=Wall/2)text("1",size=5);
+    translate([7,y_Box/2+3*Wall,z_Box/2+15])rotate([90,0,180])linear_extrude(height=Wall/2)text("2",size=5);
+    translate([-3.25,y_Box/2+3*Wall,z_Box/2+15])rotate([90,0,180])linear_extrude(height=Wall/2)text("3",size=5);
+    translate([-13,y_Box/2+3*Wall,z_Box/2+15])rotate([90,0,180])linear_extrude(height=Wall/2)text("4",size=5);
 
 }
 
