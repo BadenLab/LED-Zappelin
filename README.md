@@ -1,5 +1,5 @@
 <p align="right"><img src="https://github.com/BadenLab/Zebrafish-visual-space-model/blob/master/Images/Logo.png" width="300"/>
-<h1 align="center">Open Light-Stimulator</h1></p>
+<h1 align="center">LED Zappelin'</h1></p>
 <h3 align="center">An open source and versatile LED controller for arbitrary spectrum visual stimulation<br>
 and optogenetics during 2-photon imaging.</h4>
 <p align="center"><h6 align="right">by M.J.Y. Zimmermann, A.M. Chagas, P. Bartel, S. Pop, L.L. Prieto Godino & T. Baden</h6></p>
@@ -62,7 +62,7 @@ This problem can be readily solved electronically, for example through use of a 
 
 ## Colour Vision Experiment
 
-<p align="justify">We used the Open Light-Stimulator for studying the retinal processing of the tetrachromatic zebrafish retina in response to multichromatic signal.
+<p align="justify">We used LED Zappelin' for studying the retinal processing of the tetrachromatic zebrafish retina in response to multichromatic signal.
 Here we selected four LEDs that match the peak sensitivities of each cone opsins of our model.
 We chose LEDs and band pass filters in such manner that the stimulating light and the detection bands do not overlap as much as possible. However a temporal separation is still necessary to avoid some overlapping and any light artifact. </p>
 
@@ -82,7 +82,7 @@ We presented full field steps of red, green, blue and UV light to the fish eye (
 
 ## Optogenetics Experiment
 
-In addition to colour vision experiments, the Open Light-Stimulator is well suited for optogenetic manipulations.
+In addition to colour vision experiments, LED Zappelin' is well suited for optogenetic manipulations.
 
 <p align="justify">Here we illustrate this application in Drosophila larvae, were we recorded brain-wide calcium signals under 2P in response to optogenetic stimulation of all olfactory sensory neurons (OSNs).  We expressed the red-shifted channel rhodopsin CsChrimson OSNs and the genetically encoded calcium indicator GCaMP6s pan-neuronally by using larvae with the genotype: elav-Gal4;UAS-GCaMP6s/Orco-LexA;LexAOp-CsChrimson.</p>
 
