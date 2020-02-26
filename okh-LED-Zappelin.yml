@@ -32,22 +32,25 @@ documentation-language: English-UK
 
 # Properties
 
-title: Open Light-Stimuator, An open source and versatile LED controller for arbitrary spectrum visual stimulation and optogenetics during 2-photon imaging.   # required | text | A title to identify the thing
+title: LED Zappelin', An open source and versatile LED controller for arbitrary spectrum visual stimulation and optogenetics during 2-photon imaging.   # required | text | A title to identify the thing
 
 description: |
     Two-photon (2P) microscopy is a cornerstone technique in neuroscience research, but combining this technology with spectrally arbitrary light stimulation can be challenging due to crosstalk between stimulation light and fluorescence detection. To overcome this limitation, we present a simple and low-cost electronic solution based on an ESP32 microcontroller and a TLC5947 LED driver to rapidly time-interleave stimulation and detection epochs during scans. Implemented for less than $100, our design can independently drive up to 24 arbitrary spectrum LEDs to meet user requirements. We demonstrate the utility of our stimulator for colour vision experiments on the in vivo tetrachromatic zebrafish retina and for optogenetic circuit mapping in Drosophila.
 # required | paragraph
 
 intended-use: |                            # recommended | Paragraph
-    The tetra chromatic stimulator is meant to be used in laboratory experiments where
-    light stimulation is necessary.
+    LED Zappelin' is meant to be used in laboratory experiments where light stimulation is necessary.
 
 keywords:                                  # At least one keyword is recommended | text array
   - neuroscience
   - open science
+  - visual neuroscience
+  - optogenetics
+  - 2 photon microscopy
+  - LED stimulator
 
 
-project-link: https://github.com/BadenLab/Tetra-Chromatic-Stimulator       # At least project-link or documentation-home is required, otherwise recommended | absolute path URL
+project-link: https://github.com/BadenLab/LED-Zappelin       # At least project-link or documentation-home is required, otherwise recommended | absolute path URL
 
 #health-safety-notice: |                    # paragraph
 #  [value]
@@ -65,7 +68,7 @@ contributors:                              # recommended
     affiliation: University of Sussex                   # text
     email: a.maia-chagas@sussex.ac.uk                         # email address
 
-image: https://github.com/BadenLab/Tetra-Chromatic-Stimulator/blob/master/Images/Presentation.png                             # recommended | absolute or relative path
+image: https://github.com/BadenLab/LED-Zappelin/blob/master/Images/Presentation.png                             # recommended | absolute or relative path
 
 version: 2.2                           # text
 
@@ -109,32 +112,32 @@ license:                                   # At least one license is required | 
 licensor:
   name: Maxime Zimmermann                        # text
   affiliation: University of Sussex             # text
-  email: M.zimmermann@sussex.ac.uk              # email address
+  email: m.zimmermann@sussex.ac.uk              # email address
 
 # Documentation
 
-documentation-home: https://github.com/BadenLab/Tetra-Chromatic-Stimulator    # At least one of the project-link or documentation-home fields is required | absolute path
+documentation-home: https://github.com/BadenLab/LED-Zappelin    # At least one of the project-link or documentation-home fields is required | absolute path
 
 #archive-download: [value]                 # Absolute or relative path
 
 design-files:                             # recommended
-  - path: https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/3D%20Designs                        # Absolute or relative path
+  - path: https://github.com/BadenLab/LED-Zappelin/tree/master/3D%20Designs                        # Absolute or relative path
     title: 3D-printed parts                       # text
 
 schematics:                               # recommended where applicable
-  - path: https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/Images/Schematics                        # Absolute or relative path
+  - path: https://github.com/BadenLab/LED-Zappelin/tree/master/Images/Schematics                        # Absolute or relative path
     title: Hardware Schematics                        # text
 
-bom: https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/Bills%20of%20Materials        # recommended | absolute or relative path | Direct the maker to the Bill of Materials
+bom: https://github.com/BadenLab/LED-Zappelin/tree/master/Bills%20of%20Materials        # recommended | absolute or relative path | Direct the maker to the Bill of Materials
 
 #tool-list: [value]                        # recommended | absolute or relative path | Direct the maker to a list of tools required to make the thing
 
 making-instructions:                      # recommended
-  - path: https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/Instruction%20Manual     # Absolute or relative path
+  - path: https://github.com/BadenLab/LED-Zappelin/tree/master/Instruction%20Manual     # Absolute or relative path
     title: Instruction Manual                        # text
 
 manufacturing-files:                      # recommended where applicable
-  - path: https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/PCB/Stimulator                       # Absolute or relative path
+  - path: https://github.com/BadenLab/LED-Zappelin/tree/master/PCB/Stimulator                       # Absolute or relative path
     title: Custom Built PCB                        # text
 
 #risk-assessment:                          # recommended
@@ -150,7 +153,7 @@ manufacturing-files:                      # recommended where applicable
 #    title: [value]                        # text
 
 operating-instructions:                   # recommended
-  - path: https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/Instruction%20Manual#Operating-the-Stimulator                         # Absolute or relative path
+  - path: https://github.com/BadenLab/LED-Zappelin/tree/master/Instruction%20Manual#Operating-the-Stimulator                         # Absolute or relative path
     title: Operating Instructions                        # text
 
 #maintenance-instructions: [value]         # recommended
@@ -162,7 +165,7 @@ operating-instructions:                   # recommended
 #    title: [value]                        # text
 
 software:                                 # recommended where applicable | Source code or executable software that the thing uses
-  - path: https://github.com/BadenLab/Tetra-Chromatic-Stimulator/tree/master/Arduino%20code                         # Absolute or relative path
+  - path: https://github.com/BadenLab/LED-Zappelin/tree/master/Arduino%20code                         # Absolute or relative path
     title: Software                        # text
 
 # User defined Fields
