@@ -18,7 +18,7 @@ The hardware is licensed under the [CERN OHL v1.2](https://github.com/BadenLab/L
 ***
 
 - [An open and versatile LED controler](#Introduction)
-- [A £100 DIY efficient stimulator](https://github.com/BadenLab/LED-Zappelin/blob/master/Bills%20of%20Materials/BOM%20-%20Stimulator.ods)
+- [A £100 DIY efficient stimulator](https://github.com/BadenLab/LED-Zappelin/blob/master/Bills%20of%20Materials/BOM%20-%20Stimulator.csv)
 - [A stimulator for visual neuroscience](#Colour-Vision-Experiment)
 - [A stimulator for optogenetics](#Optogenetics-Experiment)
 - [A detailed assembly and instruction manual](https://github.com/BadenLab/LED-Zappelin/blob/master/Instruction%20Manual/README.md)
