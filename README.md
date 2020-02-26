@@ -9,7 +9,7 @@ and optogenetics during 2-photon imaging.</h4>
 This project is licensed under the [GNU General Public License v3.0](https://github.com/BadenLab/LED-Zappelin/blob/master/LICENSE)<br>
 The hardware is licensed under the [CERN OHL v1.2](https://github.com/BadenLab/LED-Zappelin/blob/master/PCB/LICENSE)
 
-<img src="https://github.com/BadenLab/LED-Zappelin/blob/master/Images/Abstract.png">
+<img src="https://github.com/BadenLab/LED-Zappelin/blob/master/Images/Abstract.png" border: 1px solid blue>
 
 ***
 
