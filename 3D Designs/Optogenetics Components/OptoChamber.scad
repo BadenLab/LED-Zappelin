@@ -5,7 +5,7 @@
     
  
 This 3D file is designed for the Multi-Chromatic Stimulator project components and its customed PCB
-Source : https://github.com/BadenLab/Multi-Chromatic-Stmulator
+Source : https://github.com/BadenLab/LED-Zappelin
 This project is Open Source licensed, released under CERN OHL v1.2
 
 by Tom Baden

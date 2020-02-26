@@ -6,7 +6,7 @@
 
 
 This 3D file is designed for the Light Stimulator project components and its customed PCB
-Source : https://github.com/BadenLab/LED Zappelin’
+Source : https://github.com/BadenLab/LED-Zappelin
 This project is Open Source licensed, released under CERN OHL v1.2
 
 by M.J.Y. Zimmermann, 2018.12.11

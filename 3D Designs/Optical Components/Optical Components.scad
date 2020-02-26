@@ -1,7 +1,7 @@
 /* 
 
                             Optical Component parts for
-                            Multi LED Stimulator v2.1.
+                            LED Zappelin' v2.2.
                     
         An opensource LED stimulator for visual and optogenetics stimulation in combination with 2-photon recording
 
@@ -9,7 +9,7 @@
 
 This 3D file is designed to be used along ThorLabs optical cage assemblies 
 
-Source : https://github.com/BadenLab/Multi-Chromatic-Stmulator
+Source : https://github.com/BadenLab/LED-Zappelin
 This project is Open Source licensed, released under CERN OHL v1.2
 
 by M.J.Y. Zimmermann and A.M. Chagas, 2019.02.25
