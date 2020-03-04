@@ -1,0 +1,13 @@
+multi:
+  PCB/Stimulator:
+    summary: A hardware implementation of the Izhikevich model of a spiking neuron
+    site: https://github.com/badenlab/led-zappelin
+    color: green
+    bom: 1-click_BOM.csv
+    gerbers: PCB/Stimulator/gerber_files
+  PCB/Potentiometer_Mounts/8_LED_Channels:
+    summary: A hardware implementation of the Izhikevich model of a spiking neuron
+    site: https://github.com/badenlab/led-zappelin
+    color: green
+    bom: 1-click_BOM.csv
+    gerbers: PCB/Potentiometer_Mounts/8_LED_Channels/gerber_files
