@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Multi Chromatic Stimulator-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -731,9 +732,12 @@ Wire Wire Line
 Wire Wire Line
 	6650 2950 6650 2900
 Wire Wire Line
+	6650 2900 5700 2900
+Wire Wire Line
 	5700 2850 5700 2900
 Wire Wire Line
 	5700 2900 3350 2900
+Connection ~ 5700 2900
 $Comp
 L Device:R R1
 U 1 1 5CE7A744
@@ -750,7 +754,7 @@ L Device:R R2
 U 1 1 5CE7A7E6
 P 3200 2900
 F 0 "R2" V 3050 2900 50  0000 C CNN
-F 1 "150" V 3200 2900 50  0000 C CNN
+F 1 "1k" V 3200 2900 50  0000 C CNN
 F 2 "" V 3130 2900 50  0001 C CNN
 F 3 "~" H 3200 2900 50  0001 C CNN
 	1    3200 2900
@@ -852,13 +856,4 @@ Wire Wire Line
 Connection ~ 5500 3000
 Wire Wire Line
 	3650 1900 3650 3800
-Wire Wire Line
-	7150 1700 7150 1550
-Wire Wire Line
-	7150 1550 6350 1550
-Wire Wire Line
-	6350 1550 6350 2900
-Wire Wire Line
-	6350 2900 5700 2900
-Connection ~ 5700 2900
 $EndSCHEMATC

@@ -1,12 +1,12 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(5.0.0)*
-G04 #@! TF.CreationDate,2020-02-26T19:19:19+00:00*
+G04 #@! TF.CreationDate,2020-03-06T16:17:22+00:00*
 G04 #@! TF.ProjectId,LED Zappelin,4C4544205A617070656C696E2E6B6963,rev?*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Copper,L2,Bot,Signal*
 G04 #@! TF.FilePolarity,Positive*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.0.0)) date 02/26/20 19:19:19*
+G04 Created by KiCad (PCBNEW (5.0.0)) date 03/06/20 16:17:22*
 %MOMM*%
 %LPD*%
 G01*
@@ -391,7 +391,7 @@ G04 #@! TO.P,,SCK/5*
 G04 #@! TO.N,Net-(A1-Pad25)*
 X92650000Y-94830000D03*
 G04 #@! TO.P,,USB*
-G04 #@! TO.N,N/C*
+G04 #@! TO.N,Net-(A1-Pad16)*
 X82490000Y-74500000D03*
 G04 #@! TO.P,,MOSI/18*
 G04 #@! TO.N,Net-(A1-Pad26)*
@@ -415,10 +415,9 @@ G04 #@! TO.P,,21*
 G04 #@! TO.N,Net-(A1-Pad30)*
 X105250000Y-94830000D03*
 G04 #@! TO.P,,3V*
-G04 #@! TO.N,Net-(A1-Pad16)*
+G04 #@! TO.N,N/C*
 X69790000Y-94830000D03*
 G04 #@! TO.P,,RST*
-G04 #@! TO.N,N/C*
 X67250000Y-94830000D03*
 G04 #@! TD*
 D19*
