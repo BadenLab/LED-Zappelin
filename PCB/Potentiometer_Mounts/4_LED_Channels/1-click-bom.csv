@@ -1,0 +1,4 @@
+References,Qty,Description,Manufacturer,MPN,Manufacturer_1,MPN_2,Manufacturer_3,MPN_4,Manufacturer_5,MPN_6,Manufacturer_7,MPN_8,Digikey,Mouser,RS,Newark,Farnell
+RV1,4,10 kOhms Trimmer Potentiometer,Farnell,89PR10KLF,,,,,,,,,,,,,89PR10KLF
+J1,2,4 way JST Female Connector Housing,RS Pro,820-1618,,,,,,,,,,,820-1618,,
+J2,2,4 way JST PCB header,RS Pro,820-1551,,,,,,,,,,,820-1551,,
