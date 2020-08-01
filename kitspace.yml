@@ -3,7 +3,7 @@ multi:
     summary: A customed board to implement LED Zappelin'
     site: https://www.sciencedirect.com/science/article/pii/S2468067220300365
     color: green
-    bom: PCB/Stimulator/1-click-BOM.csv
+    bom: PCB/Stimulator/1-click-bom.csv
     gerbers: PCB/Stimulator/gerber_files
   PCB/Potentiometer_Mounts/4_LED_Channels:
     summary: A board to easily adapt 4 LED channels
