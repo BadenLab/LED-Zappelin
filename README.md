@@ -6,6 +6,7 @@ and optogenetics during 2-photon imaging.</h4>
 
 <br>
 
+This project was published in July 2020 in the journal [HardwareX](https://www.sciencedirect.com/science/article/pii/S2468067220300365)
 This project is licensed under the [GNU General Public License v3.0](https://github.com/BadenLab/LED-Zappelin/blob/master/LICENSE)<br>
 The hardware is licensed under the [CERN OHL v1.2](https://github.com/BadenLab/LED-Zappelin/blob/master/PCB/LICENSE)
 
