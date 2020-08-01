@@ -11,12 +11,12 @@ multi:
     color: green
     bom: PCB/Potentiometer_Mounts/4_LED_Channels/1-click_BOM.csv
     gerbers: PCB/Potentiometer_Mounts/4_LED_Channels/gerber_files
- PCB/Potentiometer_Mounts/8_LED_Channels:
-   summary: A board to easily adapt 8 LED channels
-   site: https://www.sciencedirect.com/science/article/pii/S2468067220300365
-   color: green
-   bom: PCB/Potentiometer_Mounts/8_LED_Channels/1-click_BOM.csv
-   gerbers: PCB/Potentiometer_Mounts/8_LED_Channels/gerber_files
+  PCB/Potentiometer_Mounts/8_LED_Channels:
+    summary: A board to easily adapt 8 LED channels
+    site: https://www.sciencedirect.com/science/article/pii/S2468067220300365
+    color: green
+    bom: PCB/Potentiometer_Mounts/8_LED_Channels/1-click_BOM.csv
+    gerbers: PCB/Potentiometer_Mounts/8_LED_Channels/gerber_files
   PCB/Potentiometer_Mounts/16_LED_Channels:
     summary: A board to easily adapt 16 LED channels
     site: https://www.sciencedirect.com/science/article/pii/S2468067220300365
