@@ -1,6 +1,6 @@
 multi:
   PCB/Stimulator:
-    summary: A customed board to implement LED Zappelin'
+    summary: A custom board to implement LED Zappelin'
     site: https://www.sciencedirect.com/science/article/pii/S2468067220300365
     color: green
     bom: PCB/Stimulator/1-click-bom.csv
