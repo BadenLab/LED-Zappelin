@@ -6,25 +6,25 @@ multi:
     bom: PCB/Stimulator/1-click-bom.csv
     gerbers: PCB/Stimulator/gerber_files
   PCB/Potentiometer_Mounts/4_LED_Channels:
-    summary: 4 LEDs option board for the LED Zappelin' project
+    summary: 4 LED channels option board for the LED Zappelin' project
     site: https://www.sciencedirect.com/science/article/pii/S2468067220300365
     color: green
     bom: PCB/Potentiometer_Mounts/4_LED_Channels/1-click-bom.csv
     gerbers: PCB/Potentiometer_Mounts/4_LED_Channels/gerber_files
   PCB/Potentiometer_Mounts/8_LED_Channels:
-    summary: 8 LEDs option board for the LED Zappelin' project
+    summary: 8 LED channels option board for the LED Zappelin' project
     site: https://www.sciencedirect.com/science/article/pii/S2468067220300365
     color: green
     bom: PCB/Potentiometer_Mounts/8_LED_Channels/1-click-bom.csv
     gerbers: PCB/Potentiometer_Mounts/8_LED_Channels/gerber_files
   PCB/Potentiometer_Mounts/16_LED_Channels:
-    summary: 16 LEDs option board for the LED Zappelin' project
+    summary: 16 LED channels option board for the LED Zappelin' project
     site: https://www.sciencedirect.com/science/article/pii/S2468067220300365
     color: green
     bom: PCB/Potentiometer_Mounts/16_LED_Channels/1-click-bom.csv
     gerbers: PCB/Potentiometer_Mounts/16_LED_Channels/gerber_files
   PCB/Potentiometer_Mounts/24_LED_Channels:
-    summary: 24 LEDs option board for the LED Zappelin' project
+    summary: 24 LED channels option board for the LED Zappelin' project
     site: https://www.sciencedirect.com/science/article/pii/S2468067220300365
     color: green
     bom: PCB/Potentiometer_Mounts/24_LED_Channels/1-click-bom.csv
