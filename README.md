@@ -10,8 +10,6 @@ This project was published in July 2020 in the journal [HardwareX](https://www.s
 This project is licensed under the [GNU General Public License v3.0](https://github.com/BadenLab/LED-Zappelin/blob/master/LICENSE)<br>
 The hardware is licensed under the [CERN OHL v1.2](https://github.com/BadenLab/LED-Zappelin/blob/master/PCB/LICENSE)
 
-<img src="https://github.com/BadenLab/LED-Zappelin/blob/master/Images/Abstract.png" style="border: 1px solid black" />
-
 [![Demo CountPages alpha](https://j.gifs.com/P7PMLn.gif)](https://youtu.be/FhLoFGbbpPo)
 
 ***
@@ -146,3 +144,5 @@ We presented full field illumination steps of 615 nm light lasting 0.5 s and an 
 ```
 
 ***
+
+<img src="https://github.com/BadenLab/LED-Zappelin/blob/master/Images/Abstract.png" style="border: 1px solid black" />
