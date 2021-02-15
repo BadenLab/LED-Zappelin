@@ -12,7 +12,7 @@ The hardware is licensed under the [CERN OHL v1.2](https://github.com/BadenLab/L
 
 <img src="https://github.com/BadenLab/LED-Zappelin/blob/master/Images/Abstract.png" style="border: 1px solid black" />
 
-[![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://www.youtube.com/watch?v=ek1j272iAmc)
+[![Demo CountPages alpha](https://j.gifs.com/P7PMLn.gif)](https://youtu.be/FhLoFGbbpPo)
 
 ***
 
