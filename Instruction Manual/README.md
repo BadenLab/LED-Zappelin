@@ -30,7 +30,7 @@ The device consists of a custom-designed PCB, an [ESP32 development board](https
 
 From the GitHub repository, one can find the [gerber.zip folder](https://github.com/BadenLab/LED-Zappelin/tree/master/PCB/Stimulator) needed to order the PCB to any manufacturer company (i.e. https://jlcpcb.com).
 
-Ordering a minimum of five units should not cost more than £10. Gerber files were designed with [KiCad 5.0](http://kicad-pcb.org/).
+Ordering a minimum of five units should not cost more than £10. Gerber files were designed with [KiCad 5.0](http://kicad.org/).
 
 
 Schematics and PCB footprint can be downloaded and modified from the same repository if need be.
